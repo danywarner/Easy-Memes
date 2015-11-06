@@ -2,10 +2,10 @@
 <widget id="com.gmail.danywarner.easymemes2" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Easy Memes</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Meme Creator By @danywarner
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="danywarner@gmail.com" href="http://about.me/danywarner">
+       Daniel Warner
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
