@@ -1,0 +1,451 @@
+#header{
+    margin-right: -8px;
+    margin-left: -8px;
+    padding-bottom: 10px;
+    margin-top: 32px;
+    font-family: "San Francisco";
+    border-bottom: 1px solid #C2C2C2;
+}
+
+#memegrid {
+    margin-top: 10px;
+}
+
+#gridFooter{
+    margin-right: -8px;
+    margin-left: -8px;
+    padding-top: 6px;
+    visibility: hidden;
+    clear:both;
+    border-top: 1px solid #C2C2C2;
+}
+
+
+
+#firstHeader {
+    margin-top: 25px;
+    border-bottom: 1px solid #C2C2C2;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+#libraryButton {
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-left: 220px;
+}
+#cameraButton {
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-left: 10px;
+}
+
+
+
+/*#canvas {
+    display: none;
+}*/
+
+#BackToGrid {
+    color: #0F79FA;
+    font-size: 1.4em;
+    display: inline;
+    margin-left: 7px;
+    text-decoration: none;
+}
+
+@font-face{
+    font-family: 'San Francisco';
+    src:url('../fonts/SanFranciscoR.ttf');
+}
+
+#editTitle {
+    display:inline;
+    margin-left: 50px;
+}
+
+/*#imgcrop {
+    display: none;
+    visibility: hidden;
+}*/
+
+ #thumbnail, #memecontainer {
+    float: left;
+    padding-top:9px;
+}
+
+#thumbnail{
+    display:none;
+    border: 1px solid #c2c2c2;
+    margin-top: 10px;
+    padding-top: 0px;
+}
+
+.gridpicture {
+    float: left;
+    width: 99px;
+    height: 99px;
+    margin: 2px;    
+}
+
+#topText, #bottomText {
+        float: left;
+        border-style: none;
+        font-size: 2em;
+        margin-top: -300px;
+        margin-left: 0px;
+        margin-right: 0px;
+        color: #FFF;
+        background: rgba(255, 255, 255, 0);
+        font-family: Helvetica;
+        color: black;
+       -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+       -webkit-text-stroke-width: 2px;
+       -webkit-text-stroke-color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        width: 300px;
+        height: 150px;
+}
+
+#bottomText {
+    margin-top: -80px;
+    height: 80px;
+}
+
+#footer {
+        border-top: 1px solid #C2C2C2;
+        margin-right: -8px;
+        margin-left: -8px;
+        padding-left: 15px;
+    }
+
+/* #### iPhone 4s */
+@media (device-width: 320px) and (device-height: 480px) {
+
+    #footer {
+        margin-top: 370px;
+    }
+    #actionIcon {
+        width: 26px;
+        padding-top: 2px;
+    }
+    #infoButton{
+        width: 34px;
+        margin-left: 225px;
+        padding-bottom: 1px;
+    }
+    #backwardButton{
+        margin-left: 40px;
+    }
+
+    #forwardButton{
+        margin-left: 160px;
+    }
+}
+
+
+/* #### iPhone 5 Portrait #### */
+@media (device-width: 320px) and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    
+    #footer {
+        margin-top: 438px;
+    }
+    #actionIcon {
+        width: 28px;
+        padding-top: 8px;
+    }
+    #infoButton{
+        width: 36px;
+        margin-left: 225px;
+    }
+    #backwardButton{
+        margin-left: 30px;
+    }
+
+    #forwardButton{
+        margin-left: 195px;
+    }
+}
+
+/* #### iPhone 6 AND 6s */
+@media (min-device-width: 375px) and (min-device-height: 667px) {
+  #thumbnail, #memecontainer {
+        width: 360px;
+        height: 360px;
+    }
+    #libraryButton {
+        margin-left: 265px;
+    }
+
+    .gridpicture {
+        width: 85px;
+        height: 85px;
+    }
+
+     #gridFooter{
+        width: 375px;
+    }
+
+    #backwardButton{
+        margin-left: 40px;
+    }
+
+    #forwardButton{
+        margin-left: 232px;
+    }
+
+    #topText, #bottomText {
+        font-size: 2.2em;
+        margin-top: -360px;
+        width: 360px;
+    }
+    #bottomText {
+        margin-top: -80px;
+    }
+
+    #footer {
+        margin-top: 540px;
+    }
+    #actionIcon {
+        width: 28px;
+        padding-top: 8px;
+    }
+    #infoButton{
+        width: 36px;
+        margin-left: 260px;
+    }
+}
+/* 6+ AND 6s+ */
+@media (min-device-width: 414px) and (min-device-height: 736px) {
+  #thumbnail, #memecontainer {
+        width: 397px;
+        height: 397px;
+    }
+    #libraryButton {
+        margin-left: 300px;
+    }
+
+    .gridpicture {
+        width: 95px;
+        height: 95px;
+    }
+
+    #gridFooter{
+        width: 420px;
+
+    }
+    
+    #backwardButton{
+        margin-left: 40px;
+    }
+
+    #forwardButton{
+        margin-left: 262px;
+    }
+
+    #topText, #bottomText {
+        margin-top: -395px;
+        width: 400px;
+    }
+
+    #bottomText {
+        margin-top: -78px;
+    }
+     #footer {
+        margin-top: 630px;
+    }
+    #infoButton{
+        width: 36px;
+        margin-left: 315px;
+        padding-top: 2px;
+    }
+
+}
+
+
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+
+    #thumbnail, #memecontainer {
+        width: 750px;
+        height: 750px;
+    }
+
+    .gridpicture {
+        width:  144px;
+        height: 144px;
+    }
+
+    #gridFooter{
+        margin-left: -8px;
+        margin-right: -8px;
+        width: 770px;
+    }
+
+    #backwardButton{
+        margin-left: 60px;
+    }
+
+    #forwardButton{
+        margin-left: 582px;
+    }
+
+    #libraryButton {
+        margin-left: 630px;
+    }
+
+    #cameraButton {
+        margin-left: 35px;
+    }
+
+    #topText, #bottomText {
+        margin-top: -740px;
+        width: 750px;
+    }
+
+    #bottomText {
+        margin-top: -160px;
+    }
+    
+    #footer {
+        margin-top: 895px;
+        
+    }
+    #actionIcon {
+        width: 28px;
+        padding-top: 7px;
+        margin-left: 20px;
+    }
+
+    #infoButton{
+        width: 36px;
+        margin-left: 630px;
+        padding-bottom: 2px;
+    }
+}
+
+/*johan*/
+@media (device-width: 360px) and (device-height: 592px) {
+  #thumbnail, #memecontainer {
+        width: 345px;
+        height: 345px;
+        margin-top: -70px;
+    }
+    #libraryButton {
+        margin-left: 230px;
+    }
+
+    .gridpicture {
+        width: 110px;
+        height: 110px;
+    }
+
+    #topText, #bottomText {
+        margin-top: -340px;
+        width: 340px;
+    }
+
+    #bottomText {
+        margin-top: -80px;
+        height: 80px;
+    }
+    #gridFooter{
+        width: 340px;
+    }
+    
+    #backwardButton{
+        margin-left: 40px;
+    }
+
+    #forwardButton{
+        margin-left: 202px;
+    }
+
+    #footer {
+        width: 343px;
+        margin-top: 440px;
+        margin-right: -17px;
+        margin-left: -8px;
+
+    }
+      #actionIcon {
+        width: 38px;
+        padding-top: 8px;
+        content: url(../icons/share.png);
+    }
+
+    #infoButton{
+        width: 36px;
+        margin-left: 240px;
+        padding-bottom: 2px;
+    }
+    #header{
+        visibility: hidden;
+    }
+}
+
+/*Galaxy S5 - S4 - Nexus 5 - HTC One - Xperia Z -Z3 -...*/
+@media (device-width: 360px) and (device-height: 640px) {
+  #thumbnail, #memecontainer {
+        width: 345px;
+        height: 345px;
+        margin-top: -70px;
+    }
+    #libraryButton {
+        margin-left: 30px;
+        visibility: hidden;
+    }
+
+    .gridpicture {
+        width: 110px;
+        height: 110px;
+    }
+
+    #topText, #bottomText {
+        margin-top: -340px;
+        width: 340px;
+    }
+
+    #bottomText {
+        margin-top: -80px;
+        height: 80px;
+    }
+    #gridFooter{
+        width: 340px;
+    }
+    
+    #backwardButton{
+        margin-left: 40px;
+    }
+
+    #forwardButton{
+        margin-left: 202px;
+    }
+
+    #footer {
+        width: 343px;
+        margin-top: 440px;
+        margin-right: -17px;
+        margin-left: -8px;
+
+    }
+      #actionIcon {
+        width: 38px;
+        padding-top: 8px;
+        content: url(../icons/share.png);
+    }
+
+    #infoButton{
+        width: 36px;
+        margin-left: 240px;
+        padding-bottom: 2px;
+    }
+    #header{
+        visibility: hidden;
+    }
+}
