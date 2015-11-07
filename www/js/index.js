@@ -213,7 +213,7 @@ var app = {
 function showInfo(){
     userLang = window.localStorage.getItem("deviceLanguage");
     if(userLang == "es"){
-        swal({   title: "Easy Memes v1.0",   text: "<span id='thanks'> Agradecimientos: Alejandro León<br> Contacto: <a href=\"mailto:danywarner@gmail.com\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1\">@danywarner</a></span>",   imageUrl: "./icons/raptor180.png", html: true });
+        swal({   title: "Easy Memes v1.0",   text: "<span id='thanks'>Contacto: <a href=\"mailto:danywarner@gmail.com\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1\">@danywarner</a><br/>Agradecimientos: <br/>Alejandro León<br/>Jhohan Torres<br> </span>",   imageUrl: "./icons/raptor180.png", html: true });
     }else{
         swal({   title: "Easy Memes v1.0",   text: "<span id='thanks'> Thanks to: Alejandro León<br> Contact: <a href=\"mailto:danywarner@gmail.com\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1\">@danywarner</a></span>",   imageUrl: "./icons/raptor180.png", html: true });
     }

@@ -20,10 +20,16 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
+@font-face{
+    font-family: 'San Francisco';
+    src:url('SanFranciscoR.ttf');
+}
+
+
 .gridpicture {
     float: left;
-    width: 97px;
-    height: 97px;
+    width: 102px;
+    height: 102px;
     margin: 2px;    
 }
 
@@ -139,7 +145,7 @@ h1 {
     margin-left: -7px;
 }
 
-#topTextk, #bottomTextk{
+#topTextk, #bottomTextk{ /*reset*/
     animation : none;
     animation-delay : 0;
     animation-direction : normal;
@@ -291,6 +297,8 @@ h1 {
 }
 
 #topTextk, #bottomTextk{
+        padding:0; 
+        margin:0; 
         float: left;
         border-style: none;
         margin-top: -300px;
@@ -307,9 +315,10 @@ h1 {
         font-weight: bold;
         text-align: center;
         width: 300px;
-        height: auto;
+        height: 15px;
         font-size: 30px;
-         border: none;
+         border: 1px solid yellow;
+
    
 }
 #bottomTextk {
@@ -321,15 +330,21 @@ h1 {
     height: 30px;
 }
 
+.ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button {
+    font-family: "San Francisco" !important;
+}
+
 #BackToGridk {
     background: rgba(255, 255, 255, 0);
     text-transform: initial;
     color: #0F79FA;
-    font-size: 1.4em;
+    font-size: 22px;
+    font-style: normal;
     margin-left: 12px;
     margin-top: -10px;
     border-style: none;
     text-decoration: none;
     display: inline;
+    font-family:  "San Francisco" !important;
 
 }
