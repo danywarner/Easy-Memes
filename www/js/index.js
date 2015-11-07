@@ -18,7 +18,7 @@ var imgCrop;
 
 
 function fillGrid(){
-    if(loaded == false){
+    if(loaded === false){
         loaded = true;
     var screenWidth = screen.width;
     switch(screenWidth){
@@ -220,31 +220,10 @@ function showInfo(){
     
 }
 
+function setVariables(){
 
-
-function start(fuente){//alert("Fuetne: "+fuente)
-    cropped = false;
-    window.sessionStorage.clear();
-    var placeHolderText;
-    
-    
-    var memeContainer = document.getElementById("memeContainer");
-    var backText = document.getElementById("BackToGridk");
-
-    if(fuente == "abcxyz.jpg") {
-       /* var i2 = src.search("abcxyz=")+7;
-        imageData = src.substring(i2,src.length);
-        img.src = imageData;*/
-    }
-    else{
-        $("#kkk").attr('src',fuente);
-    }
-
-    ////hacerlo siempre. en las precargadas se bloquea si se intenta hacer de otra forma
-    //setTimeout(function(){ adjustSize(img); }, 100);
-
-    
     userLang = window.localStorage.getItem("deviceLanguage");
+    var backText = document.getElementById("BackToGridk");
     var placeHolderTopText;
     var placeHolderBtmText;
     if (userLang == "es"){
@@ -273,6 +252,35 @@ function start(fuente){//alert("Fuetne: "+fuente)
         backText.innerHTML = "Back";
     }
     
+    $("#topTextk").attr('placeholder',placeHolderTopText);
+    $("#bottomTextk").attr('placeholder',placeHolderBtmText);
+}
+
+function start(fuente){
+    cropped = false;
+    window.sessionStorage.clear();
+    var placeHolderText;
+    $("#topTextk").val("");
+    $("#bottomTextk").val("");
+
+    //top.addEventListener("keyup", setCropedFalse);
+    //bottom.addEventListener("keyup", setCropedFalse);
+        
+    if(fuente === "abcxyz.jpg") {
+       /* var i2 = src.search("abcxyz=")+7;
+        imageData = src.substring(i2,src.length);
+        img.src = imageData;*/
+    }
+    else{
+        $("#kkk").attr('src',fuente);
+    }
+
+    ////hacerlo siempre. en las precargadas se bloquea si se intenta hacer de otra forma
+    //setTimeout(function(){ adjustSize(img); }, 100);
+
+    
+    
+    
     
    /* var fontSize = "30px";
     top.style.fontSize = fontSize;
@@ -287,14 +295,8 @@ function start(fuente){//alert("Fuetne: "+fuente)
             top.style.fontSize = fontSize;
             bottom.style.fontSize = fontSize;
     }*/
-    $("#topTextk").attr('placeholder',placeHolderTopText);
-    $("#topTextk").val("");
-    //top.addEventListener("keyup", setCropedFalse);
-
     
-    $("#bottomTextk").attr('placeholder',placeHolderBtmText);
-    $("#bottomTextk").val("");
-    //bottom.addEventListener("keyup", setCropedFalse);
+    
 
 } 
 
@@ -366,7 +368,7 @@ function adjustSize(img){
 
 
 function crop(){
-    if(cropped == false){
+    if(cropped === false){
         //cropped = true;
             var srcCrop=fuente;
             /*if(srcCrop!="abcxyz.jpg"){
@@ -397,7 +399,7 @@ function crop(){
         //alert("w: "+ ccc.width);
         canvas.width = w;
         canvas.height = h;
-        if(w == 0 || w == null){
+        if(w === 0 || w === null){
             alert("W: "+w+" h: "+h);
         }
         var ctx = canvas.getContext('2d');
@@ -418,7 +420,7 @@ function crop(){
         wrapText(ctx, topText.value.toUpperCase(), w/2, 53, w, 60);
         wrapText(ctx, bottomText.value.toUpperCase(), w/2, h*0.82, w, 60); 
 
-        //img.src = canvas.toDataURL();
+        
         /*setTimeout(function(){ 
             window.plugins.socialsharing.share(null, 'Android', 'data:image/jpeg;base64,'+canvas.toDataURL(), null);
         }, 5);*/
@@ -438,14 +440,13 @@ function crop(){
 }
 
 $( document ).on( "pagebeforeshow", "#memeedit", function( event ) {
-    var src=passDataObject.selectedId;
-    var f = src.search(".jpg")+4;
-    fuente=src.substring(0,f);
-    fuente = "img/"+fuente;
+    fuente = "img/"+passDataObject.selectedId;
     start(fuente);
     //start(fuente);
 });
+$( document ).on( "pageinit", "#memeedit", function( event ) {
+    setVariables();
+});
 
 
-//window.addEventListener("load", start, false);
 //CLOSEMEMEDIT
