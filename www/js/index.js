@@ -404,8 +404,13 @@ function crop(){
         var ctx = canvas.getContext('2d');
         ctx.drawImage(ccc, 0,0,w,h, 0,0,w,h);
         var fontSize = 48*(h/500);
+        var lineHeight = 35;
         if(w > h){
             fontSize = 50*((h+100)/500);
+        }
+        if(screen.width == 375){
+            fontSize = 21;
+            lineHeight = 23;
         }
         if(screen.width == 768){
             fontSize = 30;
@@ -416,8 +421,8 @@ function crop(){
         ctx.textAlign = 'center';
         ctx.fillStyle = "#ffffff";
 
-        wrapText(ctx, topText.value.toUpperCase(), w/2, 30, w, 35);
-        wrapText(ctx, bottomText.value.toUpperCase(), w/2, h*0.82, w, 35); 
+        wrapText(ctx, topText.value.toUpperCase(), w/2, 30, w, lineHeight);
+        wrapText(ctx, bottomText.value.toUpperCase(), w/2, h*0.82, w, lineHeight); 
 
         
         /*setTimeout(function(){ 
