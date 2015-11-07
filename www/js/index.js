@@ -213,9 +213,9 @@ var app = {
 function showInfo(){
     userLang = window.localStorage.getItem("deviceLanguage");
     if(userLang == "es"){
-        swal({   title: "Easy Memes v1.0",   text: "<span id='thanks'>Contacto: <a href=\"mailto:danywarner@gmail.com\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1\">@danywarner</a><br/>Agradecimientos: <br/>Alejandro León<br/>Jhohan Torres<br> </span>",   imageUrl: "./icons/raptor180.png", html: true });
+        swal({   title: "Easy Memes v1.0",   text: "<span id='thanks'>Contacto: <a href=\"mailto:danywarner@gmail.com \" style=\"text-decoration: none;\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1;text-decoration: none;\">@danywarner</a><br/>Agradecimientos: <br/><a href=\"http://twitter.com/jhohantorres\" style=\"color:#58a9f1;text-decoration: none;\">@JhohanTorres</a><br/><a href=\"http://twitter.com/jalejoleon\" style=\"color:#58a9f1;text-decoration: none;\">@Jaleoleon</a><br/> </span>",   imageUrl: "./icons/raptor180.png", html: true });
     }else{
-        swal({   title: "Easy Memes v1.0",   text: "<span id='thanks'> Thanks to: Alejandro León<br> Contact: <a href=\"mailto:danywarner@gmail.com\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1\">@danywarner</a></span>",   imageUrl: "./icons/raptor180.png", html: true });
+        swal({   title: "Easy Memes v1.0",   text: "<span id='thanks'>Contact: <a href=\"mailto:danywarner@gmail.com\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1;text-decoration: none;\">@danywarner</a><br/>Thanks to: <br/>Alejandro León<br/>Jhohan Torres<br> </span>",   imageUrl: "./icons/raptor180.png", html: true });
     }
     
 }
@@ -369,7 +369,7 @@ function adjustSize(img){
 
 function crop(){
     if(cropped === false){
-        //cropped = true;
+        cropped = true;
             var srcCrop=fuente;
             /*if(srcCrop!="abcxyz.jpg"){
                 srcCrop = "img/"+srcCrop;
@@ -417,8 +417,8 @@ function crop(){
         ctx.textAlign = 'center';
         ctx.fillStyle = "#ffffff";
 
-        wrapText(ctx, topText.value.toUpperCase(), w/2, 53, w, 60);
-        wrapText(ctx, bottomText.value.toUpperCase(), w/2, h*0.82, w, 60); 
+        wrapText(ctx, topText.value.toUpperCase(), w/2, 30, w, 35);
+        wrapText(ctx, bottomText.value.toUpperCase(), w/2, h*0.82, w, 35); 
 
         
         /*setTimeout(function(){ 
@@ -428,7 +428,7 @@ function crop(){
         window.plugins.socialsharing.share(null, 'Android', 'data:image/jpeg;base64,'+base64, null);
         //window.plugins.socialsharing.share(null, 'Android filename', 'data:image/png;base64,R0lGODlhDAAMALMBAP8AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAUKAAEALAAAAAAMAAwAQAQZMMhJK7iY4p3nlZ8XgmNlnibXdVqolmhcRQA7', null);
     }else{
-       // window.plugins.socialsharing.share(null, 'Android', 'data:image/jpeg;base64,'+base64, null);
+        window.plugins.socialsharing.share(null, 'Android', 'data:image/jpeg;base64,'+base64, null);
     }
     document.getElementById("imgcrop").style.width = 0;
     document.getElementById("imgcrop").style.height = 0;
