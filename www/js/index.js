@@ -403,12 +403,16 @@ function crop(){
         }
         var ctx = canvas.getContext('2d');
         ctx.drawImage(ccc, 0,0,w,h, 0,0,w,h);
-        var fontSize = 48*(h/500);
+        var fontSize = 48*(h/500); //assuming h= 300;
         var lineHeight = 35;
         if(w > h){
             fontSize = 50*((h+100)/500);
         }
         if(screen.width == 375){
+            fontSize = 21;
+            lineHeight = 23;
+        }
+        if(screen.width == 414){
             fontSize = 21;
             lineHeight = 23;
         }
