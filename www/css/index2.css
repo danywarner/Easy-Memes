@@ -44,9 +44,9 @@
 
 
 
-/*#canvas {
+#canvas {
     display: none;
-}*/
+}
 
 #BackToGrid {
     color: #0F79FA;
@@ -66,10 +66,10 @@
     margin-left: 50px;
 }
 
-/*#imgcrop {
+#imgcrop {
     display: none;
     visibility: hidden;
-}*/
+}
 
  #thumbnail, #memecontainer {
     float: left;

@@ -220,43 +220,7 @@ function showInfo(){
     
 }
 
-function adjustSize(img){
-    var MAX_WIDTH = 300;
-    var MAX_HEIGHT = 300;
-    var high = false;
-    var wide = false;
-    width = img.width;
-    height = img.height;
 
-    if (width > height) {
-      if (width > MAX_WIDTH) {
-        height *= MAX_WIDTH / width;
-        width = MAX_WIDTH;
-        wide = true;
-      }
-    } else {
-      if (height > MAX_HEIGHT) {
-        width *= MAX_HEIGHT / height;
-        height = MAX_HEIGHT;
-      }
-    }
-
-    //alert("W: "+width+" H: "+height);
-    img.width = width;
-    img.height = height;
-    
-    img.style.display = "inherit";
-    /*if(cropped == true && sizeStored == false){
-        sizeStored = true;
-        window.localStorage.setItem("width", width);
-        window.localStorage.setItem("height", height);
-    }*/
-    document.getElementById("topText").style.display = "inherit";
-    document.getElementById("bottomText").style.display = "inherit";
-    if(wide === true ){
-        document.getElementById("topText").style.marginTop = "-"+height+"px";
-    }
-}
 
 function start(fuente){//alert("Fuetne: "+fuente)
     cropped = false;
@@ -265,7 +229,7 @@ function start(fuente){//alert("Fuetne: "+fuente)
     
     
     var memeContainer = document.getElementById("memeContainer");
-    var backText = document.getElementById("BackToGrid");
+    var backText = document.getElementById("BackToGridk");
 
     if(fuente == "abcxyz.jpg") {
        /* var i2 = src.search("abcxyz=")+7;
@@ -324,10 +288,12 @@ function start(fuente){//alert("Fuetne: "+fuente)
             bottom.style.fontSize = fontSize;
     }*/
     $("#topTextk").attr('placeholder',placeHolderTopText);
+    $("#topTextk").val("");
     //top.addEventListener("keyup", setCropedFalse);
 
     
     $("#bottomTextk").attr('placeholder',placeHolderBtmText);
+    $("#bottomTextk").val("");
     //bottom.addEventListener("keyup", setCropedFalse);
 
 } 
@@ -360,11 +326,48 @@ function wrapText(context, text, x, y, maxWidth, lineHeight) {
         context.strokeText(line, x, y);
 }
 
+function adjustSize(img){
+    var MAX_WIDTH = 300;
+    var MAX_HEIGHT = 300;
+    var high = false;
+    var wide = false;
+    width = img.width;
+    height = img.height;
+
+    if (width > height) {
+      if (width > MAX_WIDTH) {
+        height *= MAX_WIDTH / width;
+        width = MAX_WIDTH;
+        wide = true;
+      }
+    } else {
+      if (height > MAX_HEIGHT) {
+        width *= MAX_HEIGHT / height;
+        height = MAX_HEIGHT;
+      }
+    }
+
+    //alert("W: "+width+" H: "+height);
+    img.width = width;
+    img.height = height;
+    
+    img.style.display = "inherit";
+    /*if(cropped == true && sizeStored == false){
+        sizeStored = true;
+        window.localStorage.setItem("width", width);
+        window.localStorage.setItem("height", height);
+    }*/
+    document.getElementById("topText").style.display = "inherit";
+    document.getElementById("bottomText").style.display = "inherit";
+    if(wide === true ){
+        document.getElementById("topText").style.marginTop = "-"+height+"px";
+    }
+}
+
 
 function crop(){
     if(cropped == false){
         //cropped = true;
-        if(srcSet == false){
             var srcCrop=fuente;
             /*if(srcCrop!="abcxyz.jpg"){
                 srcCrop = "img/"+srcCrop;
@@ -373,12 +376,11 @@ function crop(){
                 srcCrop = imageData;
             }
             imgCrop.src = srcCrop;*/
-            srcSet = true;
             $('#imgcrop').attr('src', srcCrop);
-        }
+        
         var ccc = document.getElementById("imgcrop");
-        var w = ccc.width;
-        var h = ccc.height;
+        var w = 300;
+        var h = 300;
         var topText = document.getElementById("topTextk");
         var bottomText = document.getElementById("bottomTextk");
         //setTimeout(function(){ adjustSize(imgCrop); }, 1000);
@@ -399,7 +401,7 @@ function crop(){
             alert("W: "+w+" h: "+h);
         }
         var ctx = canvas.getContext('2d');
-        ctx.drawImage(imgCrop, 0,0,w,h, 0,0,w,h);
+        ctx.drawImage(ccc, 0,0,w,h, 0,0,w,h);
         var fontSize = 50*(h/500);
         if(w > h){
             fontSize = 50*((h+100)/500);
