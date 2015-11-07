@@ -382,6 +382,58 @@ h1 {
     }
 }
 
+/* 6+ AND 6s+ */
+@media (device-width: 414px) and (device-height: 736px) {
+  #kkk, #memecontainer {
+        width: 397px;
+        height: 397px;
+    }
+    #libraryButton {
+        margin-left: 300px;
+    }
+
+    .gridpicture {
+        width: 96px;
+        height: 96px;
+        margin-left: 4px;
+    }
+
+    #gridFooter{
+        width: 420px;
+
+    }
+    
+    #backwardButton{
+        margin-left: 40px;
+    }
+
+    #forwardButton{
+        margin-left: 262px;
+    }
+
+    #topTextk, #bottomTextk {
+        margin-top: -395px;
+        width: 395px;
+        max-width: 395px;
+        border: 1px solid green;
+        max-height: 140px;
+    }
+
+    #bottomTextk {
+        margin-top: -108px;
+         max-height: 110px;
+    }
+     #footer {
+        margin-top: 610px;
+    }
+    #infoButton{
+        width: 36px;
+        margin-left: 325px;
+        padding-top: 2px;
+    }
+
+}
+
 /* #### Tablets Portrait or Landscape #### */
 @media screen and (device-width: 768px) and (device-height: 1024px){
 
