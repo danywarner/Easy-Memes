@@ -291,7 +291,15 @@ function setVariables(){
         placeHolderBtmText = "Bottom Text";
         backText.innerHTML = "Back";
     }
-    
+
+    if(screenWidth == 768){
+        $("#topTextk").css({
+            fontSize: 44
+        });
+        $("#bottomTextk").css({
+            fontSize: 44
+        });
+    }    
     $("#topTextk").attr('placeholder',placeHolderTopText);
     $("#bottomTextk").attr('placeholder',placeHolderBtmText);
     $('#topTextk').bind('change', setCropedFalse);
@@ -321,11 +329,6 @@ function start(fuente){
    /* var fontSize = "30px";
     top.style.fontSize = fontSize;
     bottom.style.fontSize = fontSize;
-    if(screen.width == 768){
-            fontSize = "44px";
-            top.style.fontSize = fontSize;
-            bottom.style.fontSize = fontSize;
-    }
     else if(screen.width == 414){
             fontSize = "40px";
             top.style.fontSize = fontSize;
@@ -402,6 +405,29 @@ function adjustSize(img){
     }
 }
 
+var PIXEL_RATIO = (function () {
+    var ctx = document.createElement("canvas").getContext("2d"),
+        dpr = window.devicePixelRatio || 1,
+        bsr = ctx.webkitBackingStorePixelRatio ||
+              ctx.mozBackingStorePixelRatio ||
+              ctx.msBackingStorePixelRatio ||
+              ctx.oBackingStorePixelRatio ||
+              ctx.backingStorePixelRatio || 1;
+
+    return dpr / bsr;
+})();
+
+createHiDPICanvas = function(w, h, ratio) {
+    if (!ratio) { ratio = PIXEL_RATIO; }
+    var can = document.createElement("canvas");
+    can.width = w * ratio;
+    can.height = h * ratio;
+    can.style.width = w + "px";
+    can.style.height = h + "px";
+    can.getContext("2d").setTransform(ratio, 0, 0, ratio, 0, 0);
+    return can;
+}
+
 
 function crop(){
     if(cropped === false){
@@ -425,9 +451,7 @@ function crop(){
             imgCrop.width = w;
             imgCrop.height = h;
         }*/
-        //alert("w: "+ ccc.width);
-        canvas.width = w;
-        canvas.height = h;
+        canvas = createHiDPICanvas(300, 300);
         if(w === 0 || w === null){
             alert("W: "+w+" h: "+h);
         }
@@ -435,6 +459,7 @@ function crop(){
         ctx.drawImage(imgCrop, 0,0,w,h, 0,0,w,h);
         var fontSize = 48*(h/500); //assuming h= 300;
         var lineHeight = 35;
+        ctx.lineWidth = 2;
         if(w > h){
             fontSize = 50*((h+100)/500);
         }
@@ -447,10 +472,11 @@ function crop(){
             lineHeight = 23;
         }
         if(screenWidth == 768){
-            fontSize = 30;
+            fontSize = 17;
+            lineHeight = 20;
+            ctx.lineWidth = 1;
         }
         ctx.font = 'bold '+fontSize+'px Arial';
-        ctx.lineWidth = 2;
         ctx.strokeStyle = "black";
         ctx.textAlign = 'center';
         ctx.fillStyle = "#ffffff";
