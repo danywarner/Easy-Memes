@@ -17,6 +17,38 @@ var srcSet = false;
 var imgCrop;
 var screenWidth;
 
+function takePicture(){
+    navigator.camera.getPicture(onSuccess, onFail, { 
+        quality: 50,
+        allowEdit:true,
+        targetWidth: 300,
+        targetHeight: 300,
+        destinationType: Camera.DestinationType.DATA_URL
+        });
+}
+
+function getPictureFromLibrary(){
+     navigator.camera.getPicture(onSuccess, onFail, { 
+        quality: 50,
+        allowEdit:true,
+        targetWidth: 300,
+        targetHeight: 300,
+        sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
+        destinationType: Camera.DestinationType.DATA_URL
+        });
+}
+
+function onSuccess(imageData) { 
+    base64 = "data:image/jpeg;base64," + imageData;
+    fuente = "abcxyz.jpg";
+    imgCrop.src = base64;
+    //window.location.replace("memeedit.html?currentPage="+currentPage+"&meme=abcxyz.jpg&abcxyz="+base64);
+    start(fuente);
+}
+
+function onFail(message) {
+    //alert('Failed because: ' + message);
+}
 
 function fillGrid(){
     var totalMemes = strings.length;
@@ -237,6 +269,7 @@ function setVariables(){
 
     userLang = window.localStorage.getItem("deviceLanguage");
     var backText = document.getElementById("BackToGridk");
+    imgCrop =  document.getElementById("imgcrop");
     var placeHolderTopText;
     var placeHolderBtmText;
     if (userLang == "es"){
@@ -273,6 +306,7 @@ function setVariables(){
 
 function start(fuente){
     cropped = false;
+
     window.sessionStorage.clear();
     var placeHolderText;
     $("#topTextk").val("");
@@ -282,6 +316,9 @@ function start(fuente){
        /* var i2 = src.search("abcxyz=")+7;
         imageData = src.substring(i2,src.length);
         img.src = imageData;*/
+        $("#kkk").removeAttr('src');
+        $("#kkk").attr('src',base64);
+        setCropedFalse();
     }
     else{
         $("#kkk").attr('src',fuente);
@@ -382,17 +419,15 @@ function adjustSize(img){
 function crop(){
     if(cropped === false){
         cropped = true;
-            var srcCrop=fuente;
-            /*if(srcCrop!="abcxyz.jpg"){
-                srcCrop = "img/"+srcCrop;
+            if(fuente != "abcxyz.jpg"){
+                imgCrop.src = fuente;
             }
-            else{
-                srcCrop = imageData;
-            }
-            imgCrop.src = srcCrop;*/
-            $('#imgcrop').attr('src', srcCrop);
+            
+            //$("#imgcrop").removeAttr('src');
+            //$('#imgcrop').attr('src', srcCrop);
         
-        var ccc = document.getElementById("imgcrop");
+        //var ccc = document.getElementById("imgcrop");
+        
         var w = 300;
         var h = 300;
         var topText = document.getElementById("topTextk");
@@ -415,7 +450,7 @@ function crop(){
             alert("W: "+w+" h: "+h);
         }
         var ctx = canvas.getContext('2d');
-        ctx.drawImage(ccc, 0,0,w,h, 0,0,w,h);
+        ctx.drawImage(imgCrop, 0,0,w,h, 0,0,w,h);
         var fontSize = 48*(h/500); //assuming h= 300;
         var lineHeight = 35;
         if(w > h){

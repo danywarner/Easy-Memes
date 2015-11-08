@@ -19,6 +19,14 @@
                         {
                             "xml": "<feature name=\"FlurryPlugin\"><param name=\"ios-package\" value=\"FlurryPlugin\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Camera\"><param name=\"ios-package\" value=\"CDVCamera\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"CameraUsesGeolocation\" value=\"false\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -54,6 +62,52 @@
                             "xml": false,
                             "count": 1
                         }
+                    ],
+                    "ImageIO.framework": [
+                        {
+                            "xml": true,
+                            "count": 1
+                        }
+                    ],
+                    "CoreLocation.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "CoreGraphics.framework": [
+                        {
+                            "xml": false,
+                            "count": 2
+                        }
+                    ],
+                    "AssetsLibrary.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "MobileCoreServices.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "AVFoundation.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "NSLocationWhenInUseUsageDescription": [
+                        {
+                            "xml": "<string />",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -70,6 +124,9 @@
             "PACKAGE_NAME": "com.gmail.danywarner.easymemes2"
         },
         "com.phonegap.plugins.Flurry": {
+            "PACKAGE_NAME": "com.gmail.danywarner.easymemes2"
+        },
+        "cordova-plugin-camera": {
             "PACKAGE_NAME": "com.gmail.danywarner.easymemes2"
         }
     },
