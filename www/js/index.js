@@ -15,12 +15,13 @@ var base64;
 var cropped = false;
 var srcSet = false;
 var imgCrop;
+var screenWidth;
 
 
 function fillGrid(){
     if(loaded === false){
         loaded = true;
-    var screenWidth = screen.width;
+    screenWidth = screen.width;
     switch(screenWidth){
         case 320: //iphone 4s, 5, 5s
             xpictures = 15;
@@ -414,15 +415,15 @@ function crop(){
         if(w > h){
             fontSize = 50*((h+100)/500);
         }
-        if(screen.width == 375){
+        if(screenWidth == 375){
             fontSize = 21;
             lineHeight = 23;
         }
-        if(screen.width == 414){
+        if(screenWidth == 414){
             fontSize = 21;
             lineHeight = 23;
         }
-        if(screen.width == 768){
+        if(screenWidth == 768){
             fontSize = 30;
         }
         ctx.font = 'bold '+fontSize+'px Helvetica';
