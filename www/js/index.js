@@ -286,6 +286,16 @@ function setVariables(){
         placeHolderBtmText = "Testo inferiore";
         backText.innerHTML = "Indietro";
     }
+    else if(userLang == "pt"){
+        placeHolderTopText = "Texto de cima";
+        placeHolderBtmText = "Texto de baixo";
+        backText.innerHTML = "Anterior";
+    }
+    else if(userLang == "ru"){
+        placeHolderTopText = "Верхний Текст";
+        placeHolderBtmText = "Нижний Текст";
+        backText.innerHTML = "Предыдущая";
+    }
     else {
         placeHolderTopText = "Top Text";
         placeHolderBtmText = "Bottom Text";
@@ -426,7 +436,7 @@ createHiDPICanvas = function(w, h, ratio) {
     can.style.height = h + "px";
     can.getContext("2d").setTransform(ratio, 0, 0, ratio, 0, 0);
     return can;
-}
+};
 
 
 function crop(){
@@ -460,6 +470,8 @@ function crop(){
         var fontSize = 48*(h/500); //assuming h= 300;
         var lineHeight = 35;
         ctx.lineWidth = 2;
+        var yTop = 30;
+        var yBottom = h * 0.82;
         if(w > h){
             fontSize = 50*((h+100)/500);
         }
@@ -475,14 +487,16 @@ function crop(){
             fontSize = 17;
             lineHeight = 20;
             ctx.lineWidth = 1;
+            yTop = 22;
+            yBottom = 255;
         }
         ctx.font = 'bold '+fontSize+'px Arial';
         ctx.strokeStyle = "black";
         ctx.textAlign = 'center';
         ctx.fillStyle = "#ffffff";
 
-        wrapText(ctx, topText.value.toUpperCase(), w/2, 30, w, lineHeight);
-        wrapText(ctx, bottomText.value.toUpperCase(), w/2, h*0.82, w, lineHeight); 
+        wrapText(ctx, topText.value.toUpperCase(), w/2, yTop, w, lineHeight);
+        wrapText(ctx, bottomText.value.toUpperCase(), w/2, yBottom, w, lineHeight); 
 
         base64=canvas.toDataURL();
         window.plugins.socialsharing.share(null, 'Android', 'data:image/jpeg;base64,'+base64, null);
