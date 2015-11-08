@@ -23,6 +23,7 @@ function takePicture(){
         allowEdit:true,
         targetWidth: 300,
         targetHeight: 300,
+        correctOrientation: true,
         destinationType: Camera.DestinationType.DATA_URL
         });
 }
@@ -42,7 +43,6 @@ function onSuccess(imageData) {
     base64 = "data:image/jpeg;base64," + imageData;
     fuente = "abcxyz.jpg";
     imgCrop.src = base64;
-    //window.location.replace("memeedit.html?currentPage="+currentPage+"&meme=abcxyz.jpg&abcxyz="+base64);
     start(fuente);
 }
 
@@ -105,7 +105,7 @@ function fillGrid(){
             li.setAttribute('onclick',"pagingSlider.setPage('.myPageContainerClass',"+s+");");
             pageIndicator.appendChild(li);
         }
-        else {//if(s<=pages){
+        else {
             var pageIndicator = document.getElementById("pageIndicator");
             var li = document.createElement('li');
             li.setAttribute('onclick',"pagingSlider.setPage('.myPageContainerClass',"+s+");");
@@ -117,9 +117,6 @@ function fillGrid(){
             if(currentString === undefined){
                 break;
             }
-            /*var link = document.createElement("a");
-            img.classList.add('link');
-            link.setAttribute("href","#memeedit");//?currentPage="+1+"&meme="+currentString);*/
             var img = document.createElement("img");
             img.src = "./img/"+currentString;
             img.classList.add('gridpicture');
@@ -327,10 +324,6 @@ function start(fuente){
     ////hacerlo siempre. en las precargadas se bloquea si se intenta hacer de otra forma
     //setTimeout(function(){ adjustSize(img); }, 100);
 
-    
-    
-    
-    
    /* var fontSize = "30px";
     top.style.fontSize = fontSize;
     bottom.style.fontSize = fontSize;
@@ -422,12 +415,7 @@ function crop(){
             if(fuente != "abcxyz.jpg"){
                 imgCrop.src = fuente;
             }
-            
-            //$("#imgcrop").removeAttr('src');
-            //$('#imgcrop').attr('src', srcCrop);
-        
-        //var ccc = document.getElementById("imgcrop");
-        
+                    
         var w = 300;
         var h = 300;
         var topText = document.getElementById("topTextk");
@@ -476,10 +464,6 @@ function crop(){
         wrapText(ctx, topText.value.toUpperCase(), w/2, 30, w, lineHeight);
         wrapText(ctx, bottomText.value.toUpperCase(), w/2, h*0.82, w, lineHeight); 
 
-        
-        /*setTimeout(function(){ 
-            window.plugins.socialsharing.share(null, 'Android', 'data:image/jpeg;base64,'+canvas.toDataURL(), null);
-        }, 5);*/
         base64=canvas.toDataURL();
         window.plugins.socialsharing.share(null, 'Android', 'data:image/jpeg;base64,'+base64, null);
         //window.plugins.socialsharing.share(null, 'Android filename', 'data:image/png;base64,R0lGODlhDAAMALMBAP8AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAUKAAEALAAAAAAMAAwAQAQZMMhJK7iY4p3nlZ8XgmNlnibXdVqolmhcRQA7', null);
