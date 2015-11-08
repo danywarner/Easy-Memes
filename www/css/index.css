@@ -289,7 +289,7 @@ h1 {
         margin-right: 0px;
         color: #FFF;
         background: rgba(255, 255, 255, 0);
-        font-family: Helvetica;
+        font-family: Arial;
         color: black;
        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
        -webkit-text-stroke-width: 2px;
@@ -326,7 +326,7 @@ h1 {
     border-style: none;
     text-decoration: none;
     display: inline;
-    font-family:  "San Francisco" !important;
+    font-family:  SanFranciscoR.ttf;
 
 }
 

@@ -132,9 +132,6 @@ function fillGrid(){
     }
 }
 
-
-
-
 function goForward(){
     if(currentPage < lastPage){
         currentPage += 1;
@@ -310,9 +307,6 @@ function start(fuente){
     $("#bottomTextk").val("");
         
     if(fuente === "abcxyz.jpg") {
-       /* var i2 = src.search("abcxyz=")+7;
-        imageData = src.substring(i2,src.length);
-        img.src = imageData;*/
         $("#kkk").removeAttr('src');
         $("#kkk").attr('src',base64);
         setCropedFalse();
@@ -455,7 +449,7 @@ function crop(){
         if(screenWidth == 768){
             fontSize = 30;
         }
-        ctx.font = 'bold '+fontSize+'px Helvetica';
+        ctx.font = 'bold '+fontSize+'px Arial';
         ctx.lineWidth = 2;
         ctx.strokeStyle = "black";
         ctx.textAlign = 'center';
@@ -482,7 +476,6 @@ function crop(){
 $( document ).on( "pagebeforeshow", "#memeedit", function( event ) {
     fuente = "img/"+passDataObject.selectedId;
     start(fuente);
-    //start(fuente);
 });
 $( document ).on( "pageinit", "#memeedit", function( event ) {
     setVariables();
