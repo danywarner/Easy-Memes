@@ -419,6 +419,10 @@ h1 {
         width: 36px;
         margin-left: 280px;
     }
+    #cameraButton {
+        margin-left: 260px;
+        margin-top: 15px;
+    }
 }
 
 /* 6+ AND 6s+ */
@@ -469,6 +473,10 @@ h1 {
         margin-left: 325px;
         padding-top: 2px;
     }
+    #cameraButton {
+        margin-left: 300px;
+        margin-top: 15px;
+    }
 
 }
 
@@ -496,7 +504,7 @@ h1 {
     }
 
     #cameraButton {
-        margin-left: 35px;
+        margin-left: 650px;
     }
 
     #topTextk, #bottomTextk{
