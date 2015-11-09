@@ -35,7 +35,7 @@ h4 {margin: 35px 0 0 0; }
  */
 
 /* pageSlider content */
-.slidepage-container { padding-left: 2px; height:522px; position:relative; overflow: hidden;  background:#FFFFFF; margin-top: 19px; }
+.slidepage-container { padding-left: 2px; height:522px; position:relative; overflow: hidden;  background:#dedede; margin-top: 19px; }
 /*.slidepage-container .content { padding:15px;}*/
 
 .psPage { position: absolute; top: 0; left: 0;  -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
@@ -57,7 +57,7 @@ h4 {margin: 35px 0 0 0; }
 
 /*iPads*/
 @media screen and (device-width: 768px) and (device-height: 1024px){
-	.slidepage-container { padding-left: 2px; height:910px; position:relative; overflow: hidden;  background:#FFFFFF; margin-top: 19px; }
+	.slidepage-container { padding-left: 2px; height:910px; position:relative; overflow: hidden;  background:#dedede; margin-top: 19px; }
 	
 	.gridpicture {
     width: 144px;
@@ -67,7 +67,7 @@ h4 {margin: 35px 0 0 0; }
 
 /* #### iPhone 6 AND 6s */
 @media (device-width: 375px) and (device-height: 667px) {
-	.slidepage-container { padding-left: 4px; height:625px; position:relative; overflow: hidden;  background:#FFFFFF; margin-top: 19px; }
+	.slidepage-container { padding-left: 4px; height:625px; position:relative; overflow: hidden;  background:#dedede; margin-top: 19px; }
 
 	.gridpicture {
         width: 82px;
@@ -79,7 +79,7 @@ h4 {margin: 35px 0 0 0; }
 
 /* 6+ AND 6s+ */
 @media (device-width: 414px) and (device-height: 736px) {
-	.slidepage-container { padding-left: 4px; height:700px; position:relative; overflow: hidden;  background:#FFFFFF; margin-top: 19px; }
+	.slidepage-container { padding-left: 4px; height:700px; position:relative; overflow: hidden;  background:#dedede; margin-top: 19px; }
 	.gridpicture {
         width: 93px;
         height: 93px;
