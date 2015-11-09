@@ -20,8 +20,6 @@
     border-top: 1px solid #C2C2C2;
 }
 
-
-
 #firstHeader {
     margin-top: 25px;
     border-bottom: 1px solid #C2C2C2;
@@ -40,12 +38,6 @@
     height: 30px;
     border: none;
     margin-left: 10px;
-}
-
-
-
-#canvas {
-    display: none;
 }
 
 #BackToGrid {
@@ -69,6 +61,10 @@
 #imgcrop {
     display: none;
     visibility: hidden;
+}
+
+#canvas {
+    display: none;
 }
 
  #thumbnail, #memecontainer {

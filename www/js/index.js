@@ -17,6 +17,7 @@ var cropped = false;
 var srcSet = false;
 var imgCrop;
 var screenWidth;
+var kkk;
 
 function takePicture(){
     navigator.camera.getPicture(onSuccess, onFail, { 
@@ -31,7 +32,7 @@ function takePicture(){
 
 function getPictureFromLibrary(){
      navigator.camera.getPicture(onSuccess, onFail, { 
-        quality: 50,
+        quality: 100,
         allowEdit:true,
         targetWidth: 300,
         targetHeight: 300,
@@ -265,6 +266,7 @@ function setVariables(){
     userLang = window.localStorage.getItem("deviceLanguage");
     var backText = document.getElementById("BackToGridk");
     imgCrop =  document.getElementById("imgcrop");
+    kkk =  document.getElementById("kkk");
     var placeHolderTopText;
     var placeHolderBtmText;
     if (userLang == "es"){
@@ -335,9 +337,9 @@ function start(fuente){
     $("#bottomTextk").val("");
         
     if(fuente === "abcxyz.jpg") {
-        $("#kkk").removeAttr('src');
+       // $("#kkk").removeAttr('src');
         $("#kkk").attr('src',base64);
-        setCropedFalse();
+        adjustSize($("#kkk"));
     }
     else{
         $("#kkk").attr('src',fuente);
@@ -456,8 +458,8 @@ function crop(){
                 imgCrop.src = fuente;
             }
                     
-        var w = 300;
-        var h = 300;
+        var w = imgCrop.width;
+        var h = imgCrop.height;
         var topText = document.getElementById("topTextk");
         var bottomText = document.getElementById("bottomTextk");
         //setTimeout(function(){ adjustSize(imgCrop); }, 1000);
@@ -471,7 +473,7 @@ function crop(){
             imgCrop.width = w;
             imgCrop.height = h;
         }*/
-        canvas = createHiDPICanvas(300, 300);
+        canvas = createHiDPICanvas(w, h);
         if(w === 0 || w === null){
             alert("W: "+w+" h: "+h);
         }

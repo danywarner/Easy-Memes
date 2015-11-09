@@ -335,10 +335,14 @@ h1 {
         margin-left: 235px;
 }
 
+#libraryButton{
+    margin-left: 165px;
+}
 #cameraButton {
-        margin-left: 205px;
-        margin-top: 15px;
-    }
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
 
 /* #### iPhone 4s */
 @media (device-width: 320px) and (device-height: 480px) {
