@@ -302,6 +302,15 @@ function setVariables(){
         backText.innerHTML = "Back";
     }
 
+    if(screenWidth == 320){
+         $("#topTextk").css({
+            fontSize: 29
+        });
+        $("#bottomTextk").css({
+            fontSize: 29
+        });
+    }
+
     if(screenWidth == 768){
         $("#topTextk").css({
             fontSize: 44
@@ -474,6 +483,9 @@ function crop(){
         var yBottom = h * 0.82;
         if(w > h){
             fontSize = 50*((h+100)/500);
+        }
+        if(screenWidth == 320){
+            lineHeight = 30;
         }
         if(screenWidth == 375){
             fontSize = 21;
