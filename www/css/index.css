@@ -535,4 +535,7 @@ h1 {
         margin-left: 650px;
         padding-bottom: 2px;
     }
+    #firstpage{
+        background-color: #dedede;
+    }
 }
