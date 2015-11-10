@@ -504,6 +504,9 @@ function crop(){
             ctx.lineWidth = 1;
             yTop = 22;
             yBottom = 255;
+            if(w>h){
+                yBottom = 120;
+            }
         }
         ctx.font = 'bold '+fontSize+'px Arial';
         ctx.strokeStyle = "black";

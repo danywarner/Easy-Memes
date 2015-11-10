@@ -284,7 +284,6 @@ h1 {
         margin:0; 
         float: left;
         border-style: none;
-        margin-top: -300px;
         margin-left: 0px;
         margin-right: 0px;
         color: #FFF;
@@ -301,6 +300,11 @@ h1 {
         max-height: 150px;
         font-size: 30px;
         margin-left: -6px;
+}
+#topTextk{
+    position: absolute;
+    left:10px;
+    top:90px;
 }
 #bottomTextk {
     margin-top: -80px;
@@ -382,11 +386,14 @@ h1 {
 @media (device-width: 375px) and (device-height: 667px) {
   #kkk, #memecontainer {
         width: 360px;
-        height: 360px;
+      /*  height: 360px;*/
     }
 
     #libraryButton {
-        margin-left: 265px;
+        margin-left: 225px;
+    }
+    #cameraButton {
+        margin-left: 10px;
     }
 
     .gridpicture {
@@ -401,7 +408,6 @@ h1 {
 
     #topTextk, #bottomTextk {
         font-size: 2.2em;
-        margin-top: -360px;
         width: 360px;
         max-width: 358px;
         max-height: 125px;
@@ -423,20 +429,17 @@ h1 {
         width: 36px;
         margin-left: 280px;
     }
-    #cameraButton {
-        margin-left: 260px;
-        margin-top: 15px;
-    }
+
 }
 
 /* 6+ AND 6s+ */
 @media (device-width: 414px) and (device-height: 736px) {
   #kkk, #memecontainer {
         width: 397px;
-        height: 397px;
+      /*  height: 397px;*/
     }
     #libraryButton {
-        margin-left: 300px;
+        margin-left: 260px;
     }
 
     .gridpicture {
@@ -459,7 +462,6 @@ h1 {
     }
 
     #topTextk, #bottomTextk {
-        margin-top: -395px;
         width: 395px;
         max-width: 395px;
         max-height: 140px;
@@ -477,10 +479,7 @@ h1 {
         margin-left: 325px;
         padding-top: 2px;
     }
-    #cameraButton {
-        margin-left: 300px;
-        margin-top: 15px;
-    }
+
 
 }
 
@@ -489,7 +488,7 @@ h1 {
 
     #kkk, #memecontainer {
         width: 750px;
-        height: 750px;
+      /*  height: 750px;*/
     }
 
     .gridpicture {
@@ -504,20 +503,23 @@ h1 {
     }
 
     #libraryButton {
-        margin-left: 630px;
+        margin-left: 590px;
     }
 
     #cameraButton {
-        margin-left: 650px;
+        margin-left: 15px;
     }
 
     #topTextk, #bottomTextk{
-        margin-top: -740px;
         width: 750px;
         max-width: 748px;
         max-height: 200px;
-
     }
+    #topTextk{
+    position: absolute;
+    left:10px;
+    top:90px;
+}
 
     #bottomTextk {
         margin-top: -150px;
