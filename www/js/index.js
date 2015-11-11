@@ -17,6 +17,7 @@ var cropped = false;
 var srcSet = false;
 var imgCrop;
 var screenWidth;
+var screenHeight;
 var kkk;
 
 function takePicture(){
@@ -57,6 +58,7 @@ function fillGrid(){
     if(loaded === false){
         loaded = true;
     screenWidth = screen.width;
+    screenHeight = screen.height;
     switch(screenWidth){
         case 320: //iphone 4s, 5, 5s
             xpictures = 15;
@@ -215,6 +217,7 @@ var app = {
         if(userLang === null){
             checkLanguage();
         }
+
          
 
         /**
@@ -282,22 +285,22 @@ function setVariables(){
     else if(userLang == "fr"){
         placeHolderTopText = "Texte du haut";
         placeHolderBtmText = "Texte du bas";
-        backText.innerHTML = "Précédent";
+        backText.innerHTML = "Revenir";
     }
     else if(userLang == "it"){
         placeHolderTopText = "Testo superiore";
         placeHolderBtmText = "Testo inferiore";
-        backText.innerHTML = "Indietro";
+        backText.innerHTML = "Torna";
     }
     else if(userLang == "pt"){
         placeHolderTopText = "Texto de cima";
         placeHolderBtmText = "Texto de baixo";
-        backText.innerHTML = "Anterior";
+        backText.innerHTML = "Voltar";
     }
     else if(userLang == "ru"){
         placeHolderTopText = "Верхний Текст";
         placeHolderBtmText = "Нижний Текст";
-        backText.innerHTML = "Предыдущая";
+        backText.innerHTML = "назад";
     }
     else {
         placeHolderTopText = "Top Text";
@@ -343,6 +346,78 @@ function start(fuente){
     }
     else{
         $("#kkk").attr('src',fuente);
+    }
+    if(userLang == "fr"){
+        if(screenWidth == 320){
+            document.getElementById("libraryButton").style.marginLeft = "140px";
+        }
+        if(screenWidth == 375){
+            document.getElementById("libraryButton").style.marginLeft = "195px";
+        }
+        if(screenWidth == 414){
+            document.getElementById("libraryButton").style.marginLeft = "215px";
+        }
+        if(screenWidth == 768){
+            document.getElementById("libraryButton").style.marginLeft = "575px";
+        }
+    }
+    else if(userLang == "it"){
+        if(screenWidth == 320){
+            document.getElementById("libraryButton").style.marginLeft = "155px";
+        }
+        if(screenWidth == 375){
+            document.getElementById("libraryButton").style.marginLeft = "215px";
+        }
+        if(screenWidth == 414){
+            document.getElementById("libraryButton").style.marginLeft = "225px";
+        }
+        if(screenWidth == 768){
+            document.getElementById("libraryButton").style.marginLeft = "585px";
+        }
+    }
+    else if(userLang == "pt"){
+        if(screenWidth == 320){
+            document.getElementById("libraryButton").style.marginLeft = "155px";
+        }
+        if(screenWidth == 375){
+            document.getElementById("libraryButton").style.marginLeft = "215px";
+        }
+        if(screenWidth == 414){
+            document.getElementById("libraryButton").style.marginLeft = "225px";
+        }
+        if(screenWidth == 768){
+            document.getElementById("libraryButton").style.marginLeft = "585px";
+        }
+        
+    }
+    else if(userLang == "de"){
+        if(screenWidth == 320){
+            document.getElementById("libraryButton").style.marginLeft = "140px";
+        }
+        if(screenWidth == 375){
+            document.getElementById("libraryButton").style.marginLeft = "195px";
+        }
+        if(screenWidth == 414){
+            document.getElementById("libraryButton").style.marginLeft = "225px";
+        }
+        if(screenWidth == 768){
+            document.getElementById("libraryButton").style.marginLeft = "575px";
+        }
+        
+    }
+    else if(userLang == "ru"){
+        if(screenWidth == 320){
+            document.getElementById("libraryButton").style.marginLeft = "160px";
+        }
+        if(screenWidth == 375){
+            document.getElementById("libraryButton").style.marginLeft = "215px";
+        }
+        if(screenWidth == 414){
+            document.getElementById("libraryButton").style.marginLeft = "225px";
+        }
+        if(screenWidth == 768){
+            document.getElementById("libraryButton").style.marginLeft = "585px";
+        }
     }
 
     ////hacerlo siempre. en las precargadas se bloquea si se intenta hacer de otra forma
