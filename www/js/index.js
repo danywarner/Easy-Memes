@@ -355,7 +355,7 @@ function start(fuente){
             document.getElementById("libraryButton").style.marginLeft = "195px";
         }
         if(screenWidth == 414){
-            document.getElementById("libraryButton").style.marginLeft = "215px";
+            document.getElementById("libraryButton").style.marginLeft = "225px";
         }
         if(screenWidth == 768){
             document.getElementById("libraryButton").style.marginLeft = "575px";
@@ -369,7 +369,7 @@ function start(fuente){
             document.getElementById("libraryButton").style.marginLeft = "215px";
         }
         if(screenWidth == 414){
-            document.getElementById("libraryButton").style.marginLeft = "225px";
+            document.getElementById("libraryButton").style.marginLeft = "240px";
         }
         if(screenWidth == 768){
             document.getElementById("libraryButton").style.marginLeft = "585px";
@@ -383,7 +383,7 @@ function start(fuente){
             document.getElementById("libraryButton").style.marginLeft = "215px";
         }
         if(screenWidth == 414){
-            document.getElementById("libraryButton").style.marginLeft = "225px";
+            document.getElementById("libraryButton").style.marginLeft = "245px";
         }
         if(screenWidth == 768){
             document.getElementById("libraryButton").style.marginLeft = "585px";
@@ -398,7 +398,7 @@ function start(fuente){
             document.getElementById("libraryButton").style.marginLeft = "195px";
         }
         if(screenWidth == 414){
-            document.getElementById("libraryButton").style.marginLeft = "225px";
+            document.getElementById("libraryButton").style.marginLeft = "235px";
         }
         if(screenWidth == 768){
             document.getElementById("libraryButton").style.marginLeft = "575px";
@@ -413,7 +413,7 @@ function start(fuente){
             document.getElementById("libraryButton").style.marginLeft = "215px";
         }
         if(screenWidth == 414){
-            document.getElementById("libraryButton").style.marginLeft = "225px";
+            document.getElementById("libraryButton").style.marginLeft = "250px";
         }
         if(screenWidth == 768){
             document.getElementById("libraryButton").style.marginLeft = "585px";
