@@ -551,13 +551,16 @@ h1 {
 /* #### JHOHAN #### */
 @media screen and (device-width: 360px) and (device-height: 592px){
 
+    #header{
+        border: 1px solid blue;
+    }
     #kkk, #memecontainer {
         width: 343px;
       /*  height: 750px;*/
     }
 
     #footer {
-        margin-top: 520px;
+        margin-top: 450px;
     }
 
     #actionIcon {
@@ -565,12 +568,13 @@ h1 {
         padding-top: 2px;
     }
     #container{
-        height: 520px;
+        height: 512px;
     }
     .gridpicture {
-        width: 110px;
-        height: 110px;
-        margin-left: 5px;
+        width: 95px;
+        height: 95px;
+        margin-left: 16px;
+        margin-bottom: 10px;
     }
 
     #infoButton{
