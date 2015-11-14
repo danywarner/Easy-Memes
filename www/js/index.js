@@ -24,8 +24,8 @@ function takePicture(){
     navigator.camera.getPicture(onSuccess, onFail, { 
         quality: 50,
         allowEdit:true,
-        targetWidth: 300,
-        targetHeight: 300,
+        targetWidth: 500,
+        targetHeight: 500,
         correctOrientation: true,
         destinationType: Camera.DestinationType.DATA_URL
         });
@@ -35,8 +35,8 @@ function getPictureFromLibrary(){
      navigator.camera.getPicture(onSuccess, onFail, { 
         quality: 100,
         allowEdit:true,
-        targetWidth: 300,
-        targetHeight: 300,
+        targetWidth: 500,
+        targetHeight: 500,
         sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
         destinationType: Camera.DestinationType.DATA_URL
         });
@@ -309,21 +309,21 @@ function setVariables(){
     }
 
     if(screenWidth == 320){
-         $("#topTextk").css({
-            fontSize: 29
-        });
-        $("#bottomTextk").css({
-            fontSize: 29
-        });
+         $("#topTextk").css("fontSize", "29px");
+         $("#topTextk").css("line-height", "1");
+         $("#bottomTextk").css("fontSize", "29px");
+         $("#bottomTextk").css("line-height", "1");
+    }
+    else if(screenWidth == 375){
+         $("#topTextk").css("line-height", "1");
+         $("#bottomTextk").css("line-height", "1");
     }
 
     if(screenWidth == 768){
-        $("#topTextk").css({
-            fontSize: 44
-        });
-        $("#bottomTextk").css({
-            fontSize: 44
-        });
+         $("#topTextk").css("fontSize", "44px");
+         $("#topTextk").css("line-height", "1");
+         $("#bottomTextk").css("fontSize", "44px");
+         $("#bottomTextk").css("line-height", "1");
     }    
     $("#topTextk").attr('placeholder',placeHolderTopText);
     $("#bottomTextk").attr('placeholder',placeHolderBtmText);
@@ -563,24 +563,26 @@ function crop(){
             fontSize = 50*((h+100)/500);
         }
         if(screenWidth == 320){
-            lineHeight = 30;
+            yTop = 40;
+            lineHeight = 45;
         }
         if(screenWidth == 375){
-            fontSize = 21;
-            lineHeight = 23;
+            yTop = 35;
+            fontSize = 36;
+            lineHeight = 35;
         }
         if(screenWidth == 414){
-            fontSize = 21;
-            lineHeight = 23;
+            fontSize = 34;
+            lineHeight = 33;
         }
         if(screenWidth == 768){
-            fontSize = 17.5;
-            lineHeight = 20;
+            fontSize = 30;
+            lineHeight = 30;
             ctx.lineWidth = 1;
-            yTop = 22;
-            yBottom = 255;
+            yTop = 32;
+            yBottom = 430;
             if(w>h){
-                yBottom = 120;
+                yBottom = 200;
             }
         }
         ctx.font = 'bold '+fontSize+'px Arial';
