@@ -297,7 +297,7 @@ h1 {
         font-weight: bold;
         text-align: center;
         max-width: 298px;
-        max-height: 150px;
+        max-height: 145px;
         font-size: 30px;
         margin-left: -6px;
 }
@@ -307,8 +307,8 @@ h1 {
     top:90px;
 }
 #bottomTextk {
-    margin-top: -80px;
-    max-height: 75px;
+    margin-top: -90px;
+    max-height: 85px;
 }
 
 #header{
@@ -515,11 +515,12 @@ h1 {
         max-width: 748px;
         max-height: 200px;
     }
+
     #topTextk{
     position: absolute;
     left:10px;
     top:90px;
-}
+    }
 
     #bottomTextk {
         margin-top: -150px;
@@ -544,4 +545,49 @@ h1 {
     #firstpage{
         background-color: #dedede;
     }
+}
+
+
+/* #### JHOHAN #### */
+@media screen and (device-width: 360px) and (device-height: 592px){
+
+    #kkk, #memecontainer {
+        width: 343px;
+      /*  height: 750px;*/
+    }
+
+    #footer {
+        margin-top: 520px;
+    }
+
+    #actionIcon {
+        width: 26px;
+        padding-top: 2px;
+    }
+    #container{
+        height: 520px;
+    }
+    .gridpicture {
+        width: 110px;
+        height: 110px;
+        margin-left: 5px;
+    }
+
+    #infoButton{
+        width: 34px;
+        margin-left: 245px;
+        padding-top: 7px;
+    }
+    #backwardButton{
+        margin-left: 40px;
+    }
+
+    #forwardButton{
+        margin-left: 160px;
+    }
+
+    #gridFooter{
+        margin-left: -8px;
+        margin-right: -8px;
+        margin-top:  570px;   }
 }

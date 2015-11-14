@@ -11,6 +11,10 @@
                         {
                             "xml": "<feature name=\"FlurryPlugin\"><param name=\"android-package\" value=\"com.phonegap.plugins.flurry.Flurry\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SocialSharing\"><param name=\"android-package\" value=\"nl.xservices.plugins.SocialSharing\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -27,6 +31,10 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -35,6 +43,9 @@
     },
     "installed_plugins": {
         "com.phonegap.plugins.Flurry": {
+            "PACKAGE_NAME": "com.gmail.danywarner.easymemes"
+        },
+        "cordova-plugin-x-socialsharing": {
             "PACKAGE_NAME": "com.gmail.danywarner.easymemes"
         }
     },

@@ -556,7 +556,7 @@ function crop(){
         ctx.drawImage(imgCrop, 0,0,w,h, 0,0,w,h);
         var fontSize = 48*(h/500); //assuming h= 300;
         var lineHeight = 35;
-        ctx.lineWidth = 2;
+        ctx.lineWidth = 1;
         var yTop = 30;
         var yBottom = h * 0.82;
         if(w > h){
@@ -565,6 +565,8 @@ function crop(){
         if(screenWidth == 320){
             yTop = 40;
             lineHeight = 45;
+            yBottom -= 5;
+
         }
         if(screenWidth == 375){
             yTop = 35;
@@ -594,10 +596,12 @@ function crop(){
         wrapText(ctx, bottomText.value.toUpperCase(), w/2, yBottom, w, lineHeight); 
 
         base64=canvas.toDataURL();
-        window.plugins.socialsharing.share(null, 'Android', 'data:image/jpeg;base64,'+base64, null);
+        
+        window.plugins.socialsharing.share(null, 'Android', base64, null);
+       
         //window.plugins.socialsharing.share(null, 'Android filename', 'data:image/png;base64,R0lGODlhDAAMALMBAP8AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAUKAAEALAAAAAAMAAwAQAQZMMhJK7iY4p3nlZ8XgmNlnibXdVqolmhcRQA7', null);
     }else{
-        window.plugins.socialsharing.share(null, 'Android', 'data:image/jpeg;base64,'+base64, null);
+        window.plugins.socialsharing.share(null, 'Android', base64, null);
     }
     document.getElementById("imgcrop").style.width = 0;
     document.getElementById("imgcrop").style.height = 0;
