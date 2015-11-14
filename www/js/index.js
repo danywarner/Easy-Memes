@@ -55,7 +55,6 @@ function onFail(message) {
 
 function fillGrid(){
     var totalMemes = strings.length;
-    alert(totalMemes)
     if(loaded === false){
         loaded = true;
     screenWidth = screen.width;
@@ -67,7 +66,7 @@ function fillGrid(){
             break;
         case 768: //ipad 2, air, air2, pro, retina
             xpictures = 30;
-            totalMemes = 280;
+           // totalMemes = 280;
             break;
         case 375: //iphone 6
             xpictures = 28;
