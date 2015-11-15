@@ -417,6 +417,14 @@ h1 {
 
 /* Lumia: 1020, 925, 920, 900, 830, 620, HTC 8X, ZTE Open (FirefoxOS); */
 @media (device-width: 320px) and (device-height: 480px) {
+    #memeedit{
+        width: 310px;
+    }
+    #kkk{
+        width: 315px;
+        height:315px;
+        margin-left: 2px;
+    }
 
     #footer {
         margin-top: 360px;
@@ -451,13 +459,17 @@ h1 {
 
 /* s3 mini, S2, S */
 @media (device-width: 320px) and (device-height: 533px) {
+    #memeedit{
+        width: 310px;
+    }
   #kkk, #memecontainer {
-        width: 360px;
-      /*  height: 360px;*/
+        width: 315px;
+        height: 315px;
+        margin-left: 2px;
     }
 
     #libraryButton {
-        margin-left: 225px;
+        margin-left: 175px;
     }
     #cameraButton {
         margin-left: 10px;
@@ -478,8 +490,8 @@ h1 {
 
     #topTextk, #bottomTextk {
         font-size: 2.2em;
-        width: 360px;
-        max-width: 358px;
+        width: 310px;
+        max-width: 308px;
         max-height: 125px;
     }
     #bottomTextk {
@@ -488,7 +500,7 @@ h1 {
     }
 
     #footer {
-        margin-top: 540px;
+        margin-top: 405px;
     }
     #actionIcon {
         width: 28px;
@@ -497,20 +509,24 @@ h1 {
     }
     #infoButton{
         width: 36px;
-        margin-left: 280px;
+        margin-left: 220px;
     }
 
 }
 
 /* Nexus 6*/
 @media (device-width: 412px) and (device-height: 690px) {
+    #memeedit{
+        width: 400px;
+    }
   #kkk, #memecontainer {
-        width: 360px;
-      /*  height: 360px;*/
+        margin-left: 2px;
+        width: 408px;
+        height: 408px;
     }
 
     #libraryButton {
-        margin-left: 225px;
+        margin-left: 255px;
     }
     #cameraButton {
         margin-left: 10px;
@@ -541,7 +557,7 @@ h1 {
     }
 
     #footer {
-        margin-top: 540px;
+        margin-top: 555px;
     }
     #actionIcon {
         width: 28px;
@@ -550,19 +566,24 @@ h1 {
     }
     #infoButton{
         width: 36px;
-        margin-left: 280px;
+        margin-left: 310px;
     }
 
 }
 
 /* Lumia 1520*/
 @media (device-width: 432px) and (device-height: 768px) {
+    #memeedit{
+        width: 420px;
+    }
     #kkk, #memecontainer {
-        width: 360px;
+        margin-left: 2px;
+        width: 426px;
+        height: 426px;
     }
 
     #libraryButton {
-        margin-left: 225px;
+        margin-left: 285px;
     }
     #cameraButton {
         margin-left: 10px;
@@ -593,7 +614,7 @@ h1 {
     }
 
     #footer {
-        margin-top: 540px;
+        margin-top: 640px;
     }
     #actionIcon {
         width: 28px;
@@ -602,7 +623,7 @@ h1 {
     }
     #infoButton{
         width: 36px;
-        margin-left: 280px;
+        margin-left: 335px;
     }
     #firstpage{
         background-color: #dedede;
@@ -612,10 +633,13 @@ h1 {
 
 /* Nexus 9 */
 @media screen and (device-width: 768px) and (device-height: 1024px){
-
+    #memeedit{
+        width: 740px;
+    }
     #kkk, #memecontainer {
-        width: 750px;
-      /*  height: 750px;*/
+        width: 752px;
+        height: 752px;
+        margin-left: 5px;
     }
 
     .gridpicture {
@@ -677,9 +701,13 @@ h1 {
 
 /* Gal Tab: 3, 2, 1, Nexus 10, Kindle Fire 8.9, ; */
 @media screen and (device-width: 800px) and (device-height: 1280px){
-
+    #memeedit{
+        width: 790px;
+    }
     #kkk, #memecontainer {
-        width: 750px;
+        width: 790px;
+        margin-left: 3px;
+        height: 790px;
     }
 
     .gridpicture {
@@ -698,7 +726,7 @@ h1 {
     }
 
     #libraryButton {
-        margin-left: 590px;
+        margin-left: 630px;
     }
 
     #cameraButton {
@@ -723,7 +751,7 @@ h1 {
     }
     
     #footer {
-        margin-top: 895px;
+        margin-top: 1150px;
         
     }
     #actionIcon {
@@ -734,7 +762,7 @@ h1 {
 
     #infoButton{
         width: 36px;
-        margin-left: 650px;
+        margin-left: 680px;
         padding-bottom: 2px;
     }
     #firstpage{
