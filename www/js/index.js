@@ -53,12 +53,13 @@ function onFail(message) {
     //alert('Failed because: ' + message);
 }
 
-function fillGrid(){
+function fillGrid(){    
     var totalMemes = strings.length;
     if(loaded === false){
         loaded = true;
     screenWidth = screen.width;
     screenHeight = screen.height;
+    
     switch(screenWidth){
         case 320: //iphone 4s, 5, 5s
             xpictures = 15;
@@ -77,8 +78,8 @@ function fillGrid(){
         
     }
     
+    
     var pages = totalMemes / xpictures;
-
     for(var s=1;s<=pages+1;s++){
         var i = (s - 1) * xpictures;
         var f = s * xpictures;
