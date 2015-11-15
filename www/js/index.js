@@ -166,7 +166,7 @@ function checkLanguage() {
 }
 
 
-window.addEventListener("load", start, false);
+window.addEventListener("load", fillGrid, false);
 
 ///MEMEDIT
 function showInfo(){

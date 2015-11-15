@@ -703,9 +703,7 @@ h1 {
 
 /* Gal Tab: 3, 2, 1, Nexus 10, Kindle Fire 8.9, ; */
 @media screen and (device-width: 800px) and (device-height: 1280px){
-    #memeedit{
-        width: 790px;
-    }
+
     #kkk, #memecontainer {
         width: 790px;
         margin-left: 3px;
