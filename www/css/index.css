@@ -347,23 +347,25 @@ h1 {
     margin-left: 10px;
     margin-top: 15px;
 }
+#actionIcon{
+    content: url(../icons/share.png);
+}
 
 
 /* LG G4, G3, Note 2, S5, S4, s4 mini, s3, HTC One, HTC Evo 3D, Xperia: Z, S, P */
 @media (device-width: 360px) and (device-height: 640px) {
    
     #memeedit{
-        width: 350px;
+        width: 360px;
     }
 
     #kkk, #memecontainer {
         width: 350px;
         height: 350px;
-        margin-left: 5px;
     }
 
     #libraryButton {
-        margin-left: 215px;
+        margin-left: 205px;
         visibility: visible;
     }
     #cameraButton {
