@@ -153,18 +153,6 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
-@font-face{
-    font-family: 'San Francisco';
-    src:url('SanFranciscoR.ttf');
-}
-
-
-.gridpicture {
-    float: left;
-    width: 102px;
-    height: 102px;
-    margin: 2px;    
-}
 
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
@@ -260,24 +248,110 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-#thanks{
+
+
+
+@font-face{
+    font-family: 'San Francisco';
+    src:url('../fonts/SanFranciscoR.ttf');
+}
+
+@font-face{
+    font-family: 'San Francisco';
+    src:url('SanFranciscoR.ttf');
+}
+
+.ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button {
+    font-family: "San Francisco" !important;
+}
+
+
+
+#firstHeader {
+    margin-top: 25px;
+    border-bottom: 1px solid #C2C2C2;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+#memegrid {
+    margin-top: 10px;
+}
+
+#container{
+    height: 93vh;
+}
+
+.gridpicture{
+    width:30vw;
+    height:30vw;
+    float: left;
+    margin: 2px;
+    margin-left: 2vw; 
+}
+
+#gridFooter{
+    margin-right: -8px;
+    margin-left: -8px;
+    padding-top: 6px;
+    clear:both;
+    border-top: 1px solid #C2C2C2;
+}
+
+#header{
+    height: 30px;
+    margin-right: -8px;
+    margin-left: -8px;
+    padding-bottom: 10px;
+    margin-top: 32px;
+    font-family: "San Francisco";
+    border-bottom: 1px solid #C2C2C2;
+}
+
+#BackToGridk {
+    background: rgba(255, 255, 255, 0);
     text-transform: initial;
+    color: #0F79FA;
+    font-size: 22px;
+    font-style: normal;
+    margin-left: 12px;
+    margin-top: -20px;
+    border-style: none;
+    text-decoration: none;
+    display: inline;
+    font-family: Arial;
+    visibility: visible;
 }
 
 #memeContainer{
     float: left;
     border-top: 1px solid #e0e0e0;
+    padding-top:9px;
 }
 
 #kkk{
     float: left;
-   width: 300px;
-/*    height: 300px;*/
     border: 1px solid #e0e0e0;
     visibility: visible;
     margin-left: -7px;
+    width: 97vw;
 }
 
+#libraryButton{
+    margin-left: 62vw;
+    width: 36px;
+    height: 36px;
+    border: none;
+
+}
+
+#cameraButton {
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-left: 10px;
+    margin-top: 15px;
+}
 
 #topTextk, #bottomTextk{
         padding:0; 
@@ -296,7 +370,8 @@ h1 {
         text-transform: uppercase;
         font-weight: bold;
         text-align: center;
-        max-width: 298px;
+        width: 97vw;
+        max-width: 97vw;
         max-height: 145px;
         font-size: 30px;
         margin-left: -6px;
@@ -307,478 +382,59 @@ h1 {
     top:90px;
 }
 #bottomTextk {
-    margin-top: -90px;
+    margin-top: -25vw;
+    height: 85px;
     max-height: 85px;
 }
 
-#header{
-    height: 30px;
+#footer {
+    border-top: 1px solid #C2C2C2;
+    margin-right: -8px;
+    margin-left: -8px;
+    padding-left: 15px;
+    margin-top: 80vh;
 }
 
-.ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button {
-    font-family: "San Francisco" !important;
-}
-
-#BackToGridk {
-    background: rgba(255, 255, 255, 0);
-    text-transform: initial;
-    color: #0F79FA;
-    font-size: 22px;
-    font-style: normal;
-    margin-left: 12px;
-    margin-top: -20px;
-    border-style: none;
-    text-decoration: none;
-    display: inline;
-    font-family: Arial;
-    visibility: visible;
-
-}
-
-#infoButton{
-        width: 36px;
-        margin-left: 235px;
-}
-
-#libraryButton{
-    margin-left: 165px;
-}
-#cameraButton {
-    margin-left: 10px;
-    margin-top: 15px;
-}
 #actionIcon{
     content: url(../icons/share.png);
+    width: 10vw;
+    padding-top: 8px;
 }
 
 
-/* LG G4, G3, Note 2, S5, S4, s4 mini, s3, HTC One, HTC Evo 3D, Xperia: Z, S, P */
-@media (device-width: 360px) and (device-height: 640px) {
-   
-    #memeedit{
-        width: 360px;
-    }
-
-    #kkk, #memecontainer {
-        width: 350px;
-        height: 350px;
-    }
-
-    #libraryButton {
-        margin-left: 205px;
-        visibility: visible;
-    }
-    #cameraButton {
-        visibility: visible;
-        margin-left: 10px;
-    }
-
-    .gridpicture {
-        width: 110px;
-        height: 110px;
-        margin-left: 5px;
-    }
-    #container{
-        height: 595px;
-    }
-
-     #gridFooter{
-        width: 375px;
-    }
-
-    #topTextk, #bottomTextk {
-        font-size: 2.2em;
-        width: 360px;   
-        max-width: 338px;
-        max-height: 125px;
-        visibility: visible;
-        margin-left: 7px;
-       
-    }
-    #bottomTextk {
-        margin-top: -92px;
-        max-height: 90px;
-    }
-
-    #footer {
-        margin-top: 470px;
-        width: 353px;
-    }
-   
-    #actionIcon {
-        width: 28px;
-        padding-top: 8px;
-        margin-left: 7px;
-    }
-    #infoButton{
-        width: 36px;
-        margin-left: 260px;
-    }
-
+#infoButton{
+    margin-top: 3px;
+    margin-left: 75vw;
 }
 
-/* Lumia: 1020, 925, 920, 900, 830, 620, HTC 8X, ZTE Open (FirefoxOS); */
-@media (device-width: 320px) and (device-height: 480px) {
-    #memeedit{
-        width: 310px;
-    }
-    #kkk{
-        width: 315px;
-        height:315px;
-        margin-left: 2px;
-    }
-
-    #footer {
-        margin-top: 360px;
-    }
-
-    #actionIcon {
-        width: 26px;
-        padding-top: 2px;
-    }
-    #container{
-        height: 440px;
-    }
-    .gridpicture {
-        width: 85px;
-        height: 85px;
-        margin-left: 15px;
-    }
-
-    #infoButton{
-        width: 34px;
-        margin-left: 245px;
-        padding-top: 7px;
-    }
-    #backwardButton{
-        margin-left: 40px;
-    }
-
-    #forwardButton{
-        margin-left: 160px;
-    }
+#thanks{
+    text-transform: initial;
 }
 
-/* s3 mini, S2, S */
-@media (device-width: 320px) and (device-height: 533px) {
-    #memeedit{
-        width: 310px;
-    }
-  #kkk, #memecontainer {
-        width: 315px;
-        height: 315px;
-        margin-left: 2px;
-    }
-
-    #libraryButton {
-        margin-left: 175px;
-    }
-    #cameraButton {
-        margin-left: 10px;
-    }
-
-    .gridpicture {
-        width: 95px;
-        height: 95px;
-        margin-left: 5px;
-    }
-    #container{
-        height: 488px;
-    }
-
-     #gridFooter{
-        width: 375px;
-    }
-
-    #topTextk, #bottomTextk {
-        font-size: 2.2em;
-        width: 310px;
-        max-width: 308px;
-        max-height: 125px;
-    }
-    #bottomTextk {
-        margin-top: -92px;
-        max-height: 90px;
-    }
-
-    #footer {
-        margin-top: 405px;
-    }
-    #actionIcon {
-        width: 28px;
-        padding-top: 8px;
-        margin-left: 7px;
-    }
-    #infoButton{
-        width: 36px;
-        margin-left: 220px;
-    }
-
+#imgcrop {
+    display: none;
+    visibility: hidden;
 }
 
-/* Nexus 6*/
-@media (device-width: 412px) and (device-height: 690px) {
-    #memeedit{
-        width: 400px;
-    }
-  #kkk, #memecontainer {
-        margin-left: 2px;
-        width: 408px;
-        height: 408px;
-    }
-
-    #libraryButton {
-        margin-left: 255px;
-    }
-    #cameraButton {
-        margin-left: 10px;
-    }
-
-    .gridpicture {
-        width: 127px;
-        height: 127px;
-        margin-left: 5px;
-    }
-    #container{
-        height: 645px;
-    }
-
-     #gridFooter{
-        width: 375px;
-    }
-
-    #topTextk, #bottomTextk {
-        font-size: 2.2em;
-        width: 360px;
-        max-width: 358px;
-        max-height: 125px;
-    }
-    #bottomTextk {
-        margin-top: -92px;
-        max-height: 90px;
-    }
-
-    #footer {
-        margin-top: 555px;
-    }
-    #actionIcon {
-        width: 28px;
-        padding-top: 8px;
-        margin-left: 7px;
-    }
-    #infoButton{
-        width: 36px;
-        margin-left: 310px;
-    }
-
+#canvas {
+    display: none;
 }
 
-/* Lumia 1520*/
-@media (device-width: 432px) and (device-height: 768px) {
-    #memeedit{
-        width: 420px;
-    }
-    #kkk, #memecontainer {
-        margin-left: 2px;
-        width: 426px;
-        height: 426px;
-    }
+/* #### all #### */
+/*@media screen and (device-width: 412px) and (device-height: 732px){
 
-    #libraryButton {
-        margin-left: 285px;
-    }
-    #cameraButton {
-        margin-left: 10px;
-    }
+}*/
 
-    .gridpicture {
-        width: 135px;
-        height: 135px;
-        margin-left: 5px;
-    }
-    #container{
-        height: 710px;
-    }
-
-     #gridFooter{
-        width: 375px;
-    }
-
-    #topTextk, #bottomTextk {
-        font-size: 2.2em;
-        width: 360px;
-        max-width: 358px;
-        max-height: 125px;
-    }
-    #bottomTextk {
-        margin-top: -92px;
-        max-height: 90px;
-    }
-
-    #footer {
-        margin-top: 640px;
-    }
-    #actionIcon {
-        width: 28px;
-        padding-top: 8px;
-        margin-left: 7px;
-    }
-    #infoButton{
-        width: 36px;
-        margin-left: 335px;
-    }
-    #firstpage{
-        background-color: #dedede;
-    }
-
-}
-
-/* Nexus 9 */
-@media screen and (device-width: 768px) and (device-height: 1024px){
-    #memeedit{
-        width: 740px;
-    }
-    #kkk, #memecontainer {
-        width: 752px;
-        height: 752px;
-        margin-left: 5px;
-    }
-
-    .gridpicture {
-        width:  148px;
-        height: 148px;
-    }
-
-    #gridFooter{
-        margin-left: -8px;
-        margin-right: -8px;
-        width: 770px;
-    }
-
-    #libraryButton {
-        margin-left: 590px;
-    }
-
-    #cameraButton {
-        margin-left: 15px;
-    }
-
-    #topTextk, #bottomTextk{
-        width: 750px;
-        max-width: 748px;
-        max-height: 200px;
-    }
-
-    #topTextk{
-    position: absolute;
-    left:10px;
-    top:90px;
-    }
-
-    #bottomTextk {
-        margin-top: -150px;
-        max-height: 150px;
-    }
-    
-    #footer {
-        margin-top: 895px;
-        
-    }
-    #actionIcon {
-        width: 28px;
-        padding-top: 7px;
-        margin-left: 20px;
-    }
-
-    #infoButton{
-        width: 36px;
-        margin-left: 650px;
-        padding-bottom: 2px;
-    }
-    #firstpage{
-        background-color: #dedede;
-    }
-}
-
-
-/* Gal Tab: 3, 2, 1, Nexus 8, 10, Kindle Fire 8.9, ; */
-@media screen and (device-width: 800px) and (device-height: 1280px){
-
-    #kkk, #memecontainer {
-        width: 790px;
-        margin-left: 3px;
-        height: 790px;
-    }
-
-    .gridpicture {
-        width:  148px;
-        height: 148px;
-        margin-left: 8px;
-    }
-    #container{
-        height: 1230px;
-    }
-
-    #gridFooter{
-        margin-left: -8px;
-        margin-right: -8px;
-        width: 770px;
-    }
-
-    #libraryButton {
-        margin-left: 630px;
-    }
-
-    #cameraButton {
-        margin-left: 15px;
-    }
-
-    #topTextk, #bottomTextk{
-        width: 750px;
-        max-width: 748px;
-        max-height: 200px;
-    }
-
-    #topTextk{
-    position: absolute;
-    left:10px;
-    top:90px;
-    }
-
-    #bottomTextk {
-        margin-top: -150px;
-        max-height: 150px;
-    }
-    
-    #footer {
-        margin-top: 1150px;
-        
-    }
-    #actionIcon {
-        width: 28px;
-        padding-top: 7px;
-        margin-left: 20px;
-    }
-
-    #infoButton{
-        width: 36px;
-        margin-left: 680px;
-        padding-bottom: 2px;
-    }
-    #firstpage{
-        background-color: #dedede;
-    }
-}
 
 /* #### JHOHAN #### */
-@media screen and (device-width: 360px) and (device-height: 592px){
+/*@media screen and (device-width: 360px) and (device-height: 592px){
 
     #header{
         border: 1px solid blue;
     }
     #kkk, #memecontainer {
         width: 343px;
-      /*  height: 750px;*/
+      /*  height: 750px;
     }
 
     #footer {
@@ -804,16 +460,12 @@ h1 {
         margin-left: 245px;
         padding-top: 7px;
     }
-    #backwardButton{
-        margin-left: 40px;
-    }
 
-    #forwardButton{
-        margin-left: 160px;
-    }
 
     #gridFooter{
         margin-left: -8px;
         margin-right: -8px;
         margin-top:  570px;   }
-}
+}*/
+
+
