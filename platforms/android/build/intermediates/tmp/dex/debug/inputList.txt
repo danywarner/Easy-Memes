@@ -1,0 +1,9 @@
+/Users/daniel/Developer/Easy Memes/platforms/android/build/intermediates/classes/debug
+/Users/daniel/Developer/Easy Memes/platforms/android/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-8b03adc593bf3fe0deccdd4408a6f070b4e4295c.jar
+/Users/daniel/Developer/Easy Memes/platforms/android/build/intermediates/pre-dexed/debug/classes-6fd6763bb3846e9528d0ae32f5e7e57a597b7fa2.jar
+/Users/daniel/Developer/Easy Memes/platforms/android/build/intermediates/pre-dexed/debug/classes-0ec544f7cb661d37a79a1f63766a58372b1e7d26.jar
+/Users/daniel/Developer/Easy Memes/platforms/android/build/intermediates/pre-dexed/debug/classes-2a2617907c561110de7b7f9bbdaf83e4a55f9c27.jar
+/Users/daniel/Developer/Easy Memes/platforms/android/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-68f756562781476ca81c1722a259b0488446a36a.jar
+/Users/daniel/Developer/Easy Memes/platforms/android/build/intermediates/pre-dexed/debug/FlurryAgent-745f312ceb679012f7965cc44f5aab3940be578a.jar
+/Users/daniel/Developer/Easy Memes/platforms/android/build/intermediates/pre-dexed/debug/classes-e89736514a58662bcfdaabd4f6705036b6bc1806.jar
+/Users/daniel/Developer/Easy Memes/platforms/android/build/intermediates/pre-dexed/debug/classes-6418e2ec2820d0210c137d0e37323694168e7212.jar
