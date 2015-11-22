@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		09C42B0E98C04B59A7AA819B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4C340B9493461E85C8FAA1 /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0DD206F5092A427D80382BE7 /* UIImage+CropScaleOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C70BE580FEC4BEC9FBFFBAA /* UIImage+CropScaleOrientation.m */; };
