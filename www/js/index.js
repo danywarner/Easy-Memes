@@ -59,7 +59,7 @@ function fillGrid(){
         loaded = true;
     screenWidth = screen.width;
     screenHeight = screen.height;
-    alert(screenWidth+ " x "+screenHeight)
+    //alert(screenWidth+ " x "+screenHeight)
     switch(screenWidth){
         case 320: //iphone 4s, 5, 5s
         case 360:  //nexus 5,...
