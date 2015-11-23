@@ -493,9 +493,11 @@ h1 {
 @media screen and (device-width: 400px) and (device-height: 640px){
    
     #topTextk{
+        line-height : 1;
        font-size: 27px;
     }
     #bottomTextk {
+        line-height : 1;
         font-size: 27px;
         max-height: 91px;
     }

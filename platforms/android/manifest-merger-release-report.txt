@@ -4,11 +4,11 @@ ADDED from AndroidManifest.xml:2:1
 	android:hardwareAccelerated
 		ADDED from AndroidManifest.xml:2:11
 	xmlns:android
-		ADDED from AndroidManifest.xml:2:143
+		ADDED from AndroidManifest.xml:2:142
 	package
-		ADDED from AndroidManifest.xml:2:102
+		ADDED from AndroidManifest.xml:2:101
 	android:versionName
-		ADDED from AndroidManifest.xml:2:74
+		ADDED from AndroidManifest.xml:2:75
 	android:versionCode
 		ADDED from AndroidManifest.xml:2:46
 		INJECTED from AndroidManifest.xml:0:0
@@ -41,8 +41,8 @@ ADDED from AndroidManifest.xml:6:5
 		ADDED from AndroidManifest.xml:6:22
 application
 ADDED from AndroidManifest.xml:7:5
-MERGED from com.google.android.gms:play-services-plus:8.1.0:19:5
-MERGED from com.google.android.gms:play-services-basement:8.1.0:20:5
+MERGED from com.google.android.gms:play-services-plus:8.3.0:19:5
+MERGED from com.google.android.gms:play-services-basement:8.3.0:20:5
 MERGED from com.android.support:support-v4:22.2.0:22:5
 	android:supportsRtl
 		ADDED from AndroidManifest.xml:7:116
@@ -55,13 +55,15 @@ MERGED from com.android.support:support-v4:22.2.0:22:5
 activity#com.gmail.danywarner.easymemes.MainActivity
 ADDED from AndroidManifest.xml:8:9
 	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:8:248
+		ADDED from AndroidManifest.xml:8:285
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:8:194
 	android:label
 		ADDED from AndroidManifest.xml:8:97
 	android:configChanges
 		ADDED from AndroidManifest.xml:8:19
 	android:theme
-		ADDED from AndroidManifest.xml:8:194
+		ADDED from AndroidManifest.xml:8:231
 	android:name
 		ADDED from AndroidManifest.xml:8:166
 	android:launchMode
@@ -80,16 +82,16 @@ ADDED from AndroidManifest.xml:11:17
 		ADDED from AndroidManifest.xml:11:27
 meta-data#com.google.android.gms.version
 ADDED from AndroidManifest.xml:14:9
-MERGED from com.google.android.gms:play-services-basement:8.1.0:21:9
+MERGED from com.google.android.gms:play-services-basement:8.3.0:21:9
 	android:name
 		ADDED from AndroidManifest.xml:14:20
 	android:value
 		ADDED from AndroidManifest.xml:14:66
 uses-sdk
 ADDED from AndroidManifest.xml:16:5
-MERGED from com.google.android.gms:play-services-plus:8.1.0:18:5
-MERGED from com.google.android.gms:play-services-base:8.1.0:18:5
-MERGED from com.google.android.gms:play-services-basement:8.1.0:18:5
+MERGED from com.google.android.gms:play-services-plus:8.3.0:18:5
+MERGED from com.google.android.gms:play-services-base:8.3.0:18:5
+MERGED from com.google.android.gms:play-services-basement:8.3.0:18:5
 MERGED from com.android.support:support-v4:22.2.0:20:5
 MERGED from android:CordovaLib:unspecified:release:25:5
 	android:targetSdkVersion

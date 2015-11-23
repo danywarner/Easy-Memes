@@ -264,9 +264,9 @@ var app = {
 function showInfo(){
     userLang = window.localStorage.getItem("deviceLanguage");
     if(userLang == "es"){
-        swal({   title: "Easy Memes v1.0",   text: "<span id='thanks'>Contacto: <a href=\"mailto:danywarner@gmail.com \" style=\"text-decoration: none;\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1;text-decoration: none;\">@danywarner</a><br/>Agradecimientos: <br/><a href=\"http://twitter.com/jhohantorres\" style=\"color:#58a9f1;text-decoration: none;\">@JhohanTorres</a><br/><a href=\"http://twitter.com/jalejoleon\" style=\"color:#58a9f1;text-decoration: none;\">@Jalejoleon</a><br/> </span>",   imageUrl: "./icons/raptor180.png", html: true });
+        swal({   title: "Easy Memes v1.1",   text: "<span id='thanks'>Contacto: <a href=\"mailto:danywarner@gmail.com \" style=\"text-decoration: none;\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1;text-decoration: none;\">@danywarner</a><br/>Agradecimientos: <br/><a href=\"http://twitter.com/jhohantorres\" style=\"color:#58a9f1;text-decoration: none;\">@JhohanTorres</a><br/><a href=\"http://twitter.com/jalejoleon\" style=\"color:#58a9f1;text-decoration: none;\">@Jalejoleon</a><br/> </span>",   imageUrl: "./icons/raptor180.png", html: true });
     }else{
-        swal({   title: "Easy Memes v1.0",   text: "<span id='thanks'>Contact: <a href=\"mailto:danywarner@gmail.com \" style=\"text-decoration: none;\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1;text-decoration: none;\">@danywarner</a><br/>Thanks to: <br/><a href=\"http://twitter.com/jhohantorres\" style=\"color:#58a9f1;text-decoration: none;\">@JhohanTorres</a><br/><a href=\"http://twitter.com/jalejoleon\" style=\"color:#58a9f1;text-decoration: none;\">@Jalejoleon</a><br/> </span>",   imageUrl: "./icons/raptor180.png", html: true });
+        swal({   title: "Easy Memes v1.1",   text: "<span id='thanks'>Contact: <a href=\"mailto:danywarner@gmail.com \" style=\"text-decoration: none;\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1;text-decoration: none;\">@danywarner</a><br/>Thanks to: <br/><a href=\"http://twitter.com/jhohantorres\" style=\"color:#58a9f1;text-decoration: none;\">@JhohanTorres</a><br/><a href=\"http://twitter.com/jalejoleon\" style=\"color:#58a9f1;text-decoration: none;\">@Jalejoleon</a><br/> </span>",   imageUrl: "./icons/raptor180.png", html: true });
     }
     
 }
@@ -587,12 +587,22 @@ function crop(){
             fontSize = 36;
             lineHeight = 35;
         }
-        if(screenWidth == 414){
+        if(screenWidth == 414 || screenWidth == 400){
             fontSize = 34;
             lineHeight = 33;
         }
         if(screenWidth == 768){
             fontSize = 30;
+            lineHeight = 30;
+            ctx.lineWidth = 1;
+            yTop = 32;
+            yBottom = 430;
+            if(w>h){
+                yBottom = 200;
+            }
+        }
+        if(screenWidth == 800){
+            fontSize = 32;
             lineHeight = 30;
             ctx.lineWidth = 1;
             yTop = 32;
