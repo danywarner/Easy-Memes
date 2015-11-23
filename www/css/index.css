@@ -265,7 +265,9 @@ h1 {
     font-family: "San Francisco" !important;
 }
 
-
+#firstpage{
+    background-color: #e4e4e4;
+}
 
 #firstHeader {
     margin-top: 25px;
@@ -381,7 +383,7 @@ h1 {
     top:90px;
 }
 #bottomTextk {
-    margin-top: -25vw;
+    margin-top: -26vw;
     height: 85px;
     max-height: 85px;
 }
@@ -419,7 +421,7 @@ h1 {
     display: none;
 }
 
-/* nexus 5 */
+/* LG G4, G3, Note 2, S5, S4, S4 mini, S3, Nexus 5, HTC One, HTC Evo 3D, Xperia: Z, S, P, Xiaomi Mi4, Mi3, ZTE Grand S   */
 @media screen and (device-width: 360px) and (device-height: 640px){
     .gridpicture{
         width:98px;
@@ -430,6 +432,7 @@ h1 {
     }
     #container{
         height: 530px;
+        margin-top: 10px;
     }
 
     #libraryButton{
@@ -462,6 +465,87 @@ h1 {
     }
 }
 
+/* LG Optimus G, Nexus 4 */
+@media screen and (device-width: 384px) and (device-height: 640px){
+   
+    #topTextk{
+       font-size: 27px;
+    }
+    #bottomTextk {
+        font-size: 27px;
+        max-height: 91px;
+    }
+    #container{
+        margin-top: 0px;
+        height: 540px;
+        margin-left: 7px;
+    }
+
+
+    #infoButton{
+        width: 38px;
+        height: 38px;
+        margin-left: 290px;
+    }
+}
+
+/* Galaxy Note */
+@media screen and (device-width: 400px) and (device-height: 640px){
+   
+    #topTextk{
+       font-size: 27px;
+    }
+    #bottomTextk {
+        font-size: 27px;
+        max-height: 91px;
+    }
+    #container{
+        margin-top: 0px;
+        height: 540px;
+        margin-left: 7px;
+    }
+
+
+    #infoButton{
+        width: 38px;
+        height: 38px;
+        margin-left: 290px;
+    }
+}
+
+/* Nexus S, Galaxy S3 mini, S2, S */
+@media screen and (device-width: 320px) and (device-height: 533px){
+   
+    #topTextk{
+       font-size: 23px;
+    }
+    #bottomTextk {
+        margin-top: -27vw;
+        font-size: 23px;
+        max-height: 91px;
+    }
+    #container{
+        margin-top: 8px;
+        margin-left: 7px;
+    }
+
+    #libraryButton{
+        margin-left: 170px;
+        width: 30px;
+        height: 30px;
+        border: none;
+    }
+
+    #footer{
+        margin-top: 390px;
+    }
+
+    #infoButton{
+        width: 34px;
+        height: 34px;
+    }
+}
+
 /* nexus 10 */
 @media screen and (device-width: 800px) and (device-height: 1280px){
 
@@ -474,7 +558,7 @@ h1 {
     }
     #container{
         margin-top: 0px;
-        height: 1185px;
+        height: 1180px;
         margin-left: 18px;
     }
     
