@@ -305,7 +305,7 @@ h1 {
     padding-bottom: 10px;
     margin-top: 32px;
     font-family: "San Francisco";
-    border-bottom: 1px solid #C2C2C2;
+    border-bottom: 2px solid #C2C2C2;
 }
 
 #BackToGridk {
@@ -325,7 +325,6 @@ h1 {
 
 #memeContainer{
     float: left;
-    border-top: 1px solid #e0e0e0;
     padding-top:9px;
 }
 
@@ -388,7 +387,7 @@ h1 {
 }
 
 #footer {
-    border-top: 1px solid #C2C2C2;
+    border-top: 2px solid #C2C2C2;
     margin-right: -8px;
     margin-left: -8px;
     padding-left: 15px;
@@ -440,6 +439,16 @@ h1 {
         border: none;
     }
 
+    #topTextk{
+       font-size: 27px;
+        max-height: 130px;
+    }
+    #bottomTextk {
+        margin-top: -26vw;
+        font-size: 27px;
+        max-height: 89px;
+    }
+
     #footer {
         margin-right: -8px;
         margin-left: -8px;
@@ -448,6 +457,87 @@ h1 {
     }
     #infoButton{
         margin-left: 260px;
+        width: 38px;
+        height: 38px;
+    }
+}
+
+/* nexus 10 */
+@media screen and (device-width: 800px) and (device-height: 1280px){
+
+    .gridpicture{
+        width:138px;
+        height:138px;
+        float: left;
+        margin: 5px;
+        margin-left: 8px;
+    }
+    #container{
+        margin-top: 0px;
+        height: 1185px;
+        margin-left: 18px;
+    }
+    
+    
+    #header{
+        height: 50px;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+    #kkk, #memeContainer{
+       
+    }
+
+    #BackToGridk{
+        font-size: 29px;
+        margin-left: 13px;
+        margin-top: -6px;
+    }
+
+    #libraryButton{
+        content: url(../icons/plus2.png);
+        margin-left: 600px;
+        width: 40px;
+        height: 40px;
+        margin-top: 3px;
+    }
+
+    #cameraButton {
+        content: url(../icons/camera3.png);
+        width: 54px;
+        height: 40px;
+        margin-top: 3px;
+    }
+
+    #topTextk{
+        position: absolute;
+        left:10px;
+        top:120px;
+        font-size: 50px;
+        max-height: 165px;
+    }
+    #bottomTextk {
+        margin-top: -25vw;
+        height: 85px;
+        max-height: 165px;
+        font-size: 50px;
+    }
+
+    #footer {
+        margin-right: -8px;
+        margin-left: -8px;
+        padding-left: 15px;
+        margin-top: 1050px;
+    }
+
+    #actionIcon{
+        width: 60px;
+        padding-top: 8px;
+    }
+    #infoButton{
+        width: 60px;
+        height: 60px;
+        margin-left: 650px;
     }
 }
 
