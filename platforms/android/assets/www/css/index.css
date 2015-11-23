@@ -514,7 +514,7 @@ h1 {
 }
 
 /* Nexus S, Galaxy S3 mini, S2, S */
-@media screen and (device-width: 320px) and (device-height: 533px){
+@media screen and (device-width: 320px) and (device-height: 533px), (device-height: 534px)  {
    
     #topTextk{
        font-size: 23px;
