@@ -575,6 +575,13 @@ function crop(){
             yBottom -= 5;
 
         }
+        if(screenWidth == 360){
+            fontSize = 38;
+
+            yTop = 40;
+            lineHeight = 45;
+            yBottom -= 5;
+        }
         if(screenWidth == 375){
             yTop = 35;
             fontSize = 36;
