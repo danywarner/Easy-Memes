@@ -2,21 +2,9 @@
 
 
 
-#gridFooter{
-    margin-right: -8px;
-    margin-left: -8px;
-    padding-top: 6px;
-    visibility: hidden;
-    clear:both;
-    border-top: 1px solid #C2C2C2;
-}
 
-#firstHeader {
-    margin-top: 25px;
-    border-bottom: 1px solid #C2C2C2;
-    margin-right: -8px;
-    margin-left: -8px;
-}
+
+
 
 #libraryButton {
     width: 30px;
