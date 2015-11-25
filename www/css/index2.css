@@ -4,41 +4,6 @@
 
 
 
-
-
-.gridpicture {
-    float: left;
-    width: 99px;
-    height: 99px;
-    margin: 2px;    
-}
-
-#topText, #bottomText {
-        float: left;
-        border-style: none;
-        font-size: 2em;
-        margin-top: -300px;
-        margin-left: 0px;
-        margin-right: 0px;
-        color: #FFF;
-        background: rgba(255, 255, 255, 0);
-        font-family: Helvetica;
-        color: black;
-       -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-       -webkit-text-stroke-width: 2px;
-       -webkit-text-stroke-color: black;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-align: center;
-        width: 300px;
-        height: 150px;
-}
-
-#bottomText {
-    margin-top: -80px;
-    height: 80px;
-}
-
 #footer {
         border-top: 1px solid #C2C2C2;
         margin-right: -8px;
