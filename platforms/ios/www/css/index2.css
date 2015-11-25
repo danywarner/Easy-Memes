@@ -6,18 +6,6 @@
 
 
 
- #thumbnail, #memecontainer {
-    float: left;
-    padding-top:9px;
-}
-
-#thumbnail{
-    display:none;
-    border: 1px solid #c2c2c2;
-    margin-top: 10px;
-    padding-top: 0px;
-}
-
 .gridpicture {
     float: left;
     width: 99px;
