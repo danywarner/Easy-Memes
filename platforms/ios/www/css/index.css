@@ -457,9 +457,8 @@ h1 {
 
 /* #### iPhone 6 AND 6s */
 @media (device-width: 375px) and (device-height: 667px) {
-  #kkk, #memecontainer {
+  #kkk {
         width: 360px;
-      /*  height: 360px;*/
     }
 
     #libraryButton {
