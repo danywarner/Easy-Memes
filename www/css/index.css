@@ -413,9 +413,11 @@ h1 {
         width: 26px;
         padding-top: 2px;
     }
+
     #container{
         height: 440px;
     }
+
     .gridpicture {
         width: 85px;
         height: 85px;
@@ -427,12 +429,29 @@ h1 {
         margin-left: 245px;
         padding-top: 7px;
     }
+
     #backwardButton{
         margin-left: 40px;
     }
 
     #forwardButton{
         margin-left: 160px;
+    }
+}
+
+/* #### iPhone 5 Portrait #### */
+@media (device-width: 320px) and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    
+    #footer {
+        margin-top: 438px;
+    }
+    #actionIcon {
+        width: 28px;
+        padding-top: 8px;
+    }
+    #infoButton{
+        width: 36px;
+        margin-left: 225px;
     }
 }
 
