@@ -159,12 +159,7 @@
 }
 
 
-.gridpicture {
-    float: left;
-    width: 102px;
-    height: 102px;
-    margin: 2px;    
-}
+
 
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
@@ -260,8 +255,44 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-#thanks{
+
+/*CUSTOM*/
+
+
+.gridpicture {
+    float: left;
+    width: 102px;
+    height: 102px;
+    margin: 2px;    
+}
+
+
+#header{
+    height: 30px;
+}
+
+#libraryButton{
+    margin-left: 165px;
+}
+#cameraButton {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+#BackToGridk { /*SFNS Display*/
+    font-family: "SFNS Display" !important;
+    background: rgba(255, 255, 255, 0);
     text-transform: initial;
+    color: #0F79FA;
+    font-size: 22px;
+    font-style: normal;
+    margin-left: 12px;
+    margin-top: -20px;
+    border-style: none;
+    text-decoration: none;
+    display: inline;
+    font-family: Arial;
+
 }
 
 #memeContainer{
@@ -272,7 +303,6 @@ h1 {
 #kkk{
     float: left;
    width: 300px;
-/*    height: 300px;*/
     border: 1px solid #e0e0e0;
     visibility: visible;
     margin-left: -7px;
@@ -311,41 +341,13 @@ h1 {
     max-height: 75px;
 }
 
-#header{
-    height: 30px;
-}
-
-.ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button {
-    font-family: "San Francisco" !important;
-}
-
-#BackToGridk { /*SFNS Display*/
-    font-family: "SFNS Display" !important;
-    background: rgba(255, 255, 255, 0);
-    text-transform: initial;
-    color: #0F79FA;
-    font-size: 22px;
-    font-style: normal;
-    margin-left: 12px;
-    margin-top: -20px;
-    border-style: none;
-    text-decoration: none;
-    display: inline;
-    font-family: Arial;
-
-}
-
 #infoButton{
         width: 36px;
         margin-left: 235px;
 }
 
-#libraryButton{
-    margin-left: 165px;
-}
-#cameraButton {
-    margin-left: 10px;
-    margin-top: 15px;
+#thanks{
+    text-transform: initial;
 }
 
 
