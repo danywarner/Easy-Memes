@@ -258,6 +258,15 @@ h1 {
 
 /*CUSTOM*/
 
+#imgcrop {
+    display: none;
+    visibility: hidden;
+}
+
+#canvas {
+    display: none;
+}
+
 
 #firstHeader {
     margin-top: 25px;

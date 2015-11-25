@@ -6,36 +6,6 @@
 
 
 
-
-
-
-#BackToGrid {
-    color: #0F79FA;
-    font-size: 1.4em;
-    display: inline;
-    margin-left: 7px;
-    text-decoration: none;
-}
-
-@font-face{
-    font-family: 'San Francisco';
-    src:url('../fonts/SanFranciscoR.ttf');
-}
-
-#editTitle {
-    display:inline;
-    margin-left: 50px;
-}
-
-#imgcrop {
-    display: none;
-    visibility: hidden;
-}
-
-#canvas {
-    display: none;
-}
-
  #thumbnail, #memecontainer {
     float: left;
     padding-top:9px;
