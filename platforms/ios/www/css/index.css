@@ -506,9 +506,8 @@ h1 {
 
 /* 6+ AND 6s+ */
 @media (device-width: 414px) and (device-height: 736px) {
-  #kkk, #memecontainer {
+    #kkk {
         width: 397px;
-      /*  height: 397px;*/
     }
     #libraryButton {
         margin-left: 260px;
@@ -522,15 +521,10 @@ h1 {
 
     #gridFooter{
         width: 420px;
-
-    }
-    
-    #backwardButton{
-        margin-left: 40px;
     }
 
-    #forwardButton{
-        margin-left: 262px;
+    #container{
+        height: 691px;
     }
 
     #topTextk, #bottomTextk {
@@ -544,12 +538,12 @@ h1 {
          max-height: 110px;
     }
      #footer {
-        margin-top: 610px;
+        margin-top: 600px;
     }
     #infoButton{
-        width: 36px;
-        margin-left: 325px;
-        padding-top: 2px;
+        width: 48px;
+        margin-left: 305px;
+        margin-top: -2px;
     }
 
 
