@@ -384,6 +384,14 @@ h1 {
     max-height: 75px;
 }
 
+
+#footer {
+        border-top: 1px solid #C2C2C2;
+        margin-right: -8px;
+        margin-left: -8px;
+        padding-left: 15px;
+    }
+
 #infoButton{
         width: 36px;
         margin-left: 235px;
@@ -400,7 +408,7 @@ h1 {
     #footer {
         margin-top: 360px;
     }
-
+    
     #actionIcon {
         width: 26px;
         padding-top: 2px;
@@ -413,7 +421,7 @@ h1 {
         height: 85px;
         margin-left: 15px;
     }
-
+    
     #infoButton{
         width: 34px;
         margin-left: 245px;

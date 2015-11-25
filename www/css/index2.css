@@ -4,38 +4,6 @@
 
 
 
-#footer {
-        border-top: 1px solid #C2C2C2;
-        margin-right: -8px;
-        margin-left: -8px;
-        padding-left: 15px;
-    }
-
-/* #### iPhone 4s */
-@media (device-width: 320px) and (device-height: 480px) {
-
-    #footer {
-        margin-top: 370px;
-    }
-    #actionIcon {
-        width: 26px;
-        padding-top: 2px;
-    }
-    #infoButton{
-        width: 34px;
-        margin-left: 225px;
-        padding-bottom: 1px;
-    }
-    #backwardButton{
-        margin-left: 40px;
-    }
-
-    #forwardButton{
-        margin-left: 160px;
-    }
-}
-
-
 /* #### iPhone 5 Portrait #### */
 @media (device-width: 320px) and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     
