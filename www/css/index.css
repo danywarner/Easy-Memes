@@ -319,7 +319,8 @@ h1 {
     font-family: "San Francisco" !important;
 }
 
-#BackToGridk {
+#BackToGridk { /*SFNS Display*/
+    font-family: "SFNS Display" !important;
     background: rgba(255, 255, 255, 0);
     text-transform: initial;
     color: #0F79FA;

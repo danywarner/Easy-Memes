@@ -32,6 +32,7 @@
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		61554949AC50413487D0C6D2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB488104941D479F814F29CD /* SystemConfiguration.framework */; };
+		65F3FA591C06574700B747CB /* SanFrancisco.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65F3FA571C06571300B747CB /* SanFrancisco.ttf */; };
 		6637E8F81518474199410335 /* CDVCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B03C08E6E754F958296C8E2 /* CDVCamera.m */; };
 		68A1F927C4324F1E97C5256B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A0BDFAA2B042C3822BF729 /* Security.framework */; };
 		6F99B811D3954460AE084AC2 /* CDVJpegHeaderWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E527F97C78464FBBAC5B41AD /* CDVJpegHeaderWriter.m */; };
@@ -107,6 +108,7 @@
 		3E0BAD47D7444D59847DC6FA /* SocialSharing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialSharing.h; path = "cordova-plugin-x-socialsharing/SocialSharing.h"; sourceTree = "<group>"; };
 		58B87667953D4116BFFE6B74 /* Social.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		65F3FA571C06571300B747CB /* SanFrancisco.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco.ttf; sourceTree = "<group>"; };
 		732E192CB3D1415792F94A89 /* AVFoundation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7C4C340B9493461E85C8FAA1 /* ImageIO.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		7E7966D41810823500FA85AD /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				EB87FDF41871DAF40020F90C /* config.xml */,
+				65F3FA571C06571300B747CB /* SanFrancisco.ttf */,
 				EB87FDF31871DA8E0020F90C /* www */,
 				EB87FDF21871DA7A0020F90C /* merges */,
 				EB87FDF11871DA420020F90C /* Staging */,
@@ -397,6 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F3FA591C06574700B747CB /* SanFrancisco.ttf in Resources */,
 				7E7966E41810823500FA85AD /* icon-76.png in Resources */,
 				7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */,
 				308D05371370CCF300D202BF /* icon-72.png in Resources */,
