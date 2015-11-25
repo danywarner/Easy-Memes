@@ -556,9 +556,8 @@ h1 {
 /* #### Tablets Portrait or Landscape #### */
 @media screen and (device-width: 768px) and (device-height: 1024px){
 
-    #kkk, #memecontainer {
+    #kkk {
         width: 750px;
-      /*  height: 750px;*/
     }
 
     .gridpicture {
@@ -585,11 +584,12 @@ h1 {
         max-width: 748px;
         max-height: 200px;
     }
+    
     #topTextk{
     position: absolute;
     left:10px;
     top:90px;
-}
+    }
 
     #bottomTextk {
         margin-top: -150px;
