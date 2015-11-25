@@ -295,13 +295,21 @@ h1 {
     height: 30px;
 }
 
-#libraryButton{
+#libraryButton {
+    width: 30px;
+    height: 30px;
+    border: none;
     margin-left: 165px;
 }
+
 #cameraButton {
+    width: 30px;
+    height: 30px;
+    border: none;
     margin-left: 10px;
     margin-top: 15px;
 }
+
 
 #BackToGridk { /*SFNS Display*/
     font-family: "SFNS Display" !important;

@@ -6,18 +6,8 @@
 
 
 
-#libraryButton {
-    width: 30px;
-    height: 30px;
-    border: none;
-    margin-left: 220px;
-}
-#cameraButton {
-    width: 30px;
-    height: 30px;
-    border: none;
-    margin-left: 10px;
-}
+
+
 
 #BackToGrid {
     color: #0F79FA;
