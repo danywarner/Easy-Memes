@@ -3,54 +3,6 @@
 
 
 
-
-
-
-/* #### iPhone 6 AND 6s */
-@media (min-device-width: 375px) and (min-device-height: 667px) {
-
-    #libraryButton {
-        margin-left: 265px;
-    }
-
-    .gridpicture {
-        width: 85px;
-        height: 85px;
-    }
-
-     #gridFooter{
-        width: 375px;
-    }
-
-    #backwardButton{
-        margin-left: 40px;
-    }
-
-    #forwardButton{
-        margin-left: 232px;
-    }
-
-    #topText, #bottomText {
-        font-size: 2.2em;
-        margin-top: -360px;
-        width: 360px;
-    }
-    #bottomText {
-        margin-top: -80px;
-    }
-
-    #footer {
-        margin-top: 540px;
-    }
-    #actionIcon {
-        width: 28px;
-        padding-top: 8px;
-    }
-    #infoButton{
-        width: 36px;
-        margin-left: 260px;
-    }
-}
 /* 6+ AND 6s+ */
 @media (min-device-width: 414px) and (min-device-height: 736px) {
   #thumbnail, #memecontainer {
