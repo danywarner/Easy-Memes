@@ -246,6 +246,95 @@
 
 
 
+/* #### iPhone 6+ / 6s+ Landscape #### */
+@media (device-width: 414px) and (device-height: 736px) and (orientation: landscape) {
+    
+    #header{
+        margin-top: 0px;
+        border-bottom: none;
+        height: 12px;
+    }
+
+    #kkk, #memeContainer{
+        padding: 0px;
+        margin: 0px;
+        margin-top: 2px;
+        margin-left: 3px;
+        border: none;
+        width: 383px;
+    }
+
+    .gridpicture{
+        width: 96px;
+        height: 96px;
+    }
+
+    #footer {
+        visibility: hidden;
+    }
+
+    #container{
+        margin-left: 18px;
+        margin-top: 0px;
+        height: 388px;
+    }
+
+    #topTextk, #bottomTextk{
+        width: 377px;
+        max-width: 377px;
+        margin-left: -4px;
+        border: 1px solid green;
+    }
+    #topTextk{
+        max-height: 140px;
+        position: absolute;
+        left:10px;
+        top:30px;
+    }
+    #bottomTextk{
+        margin-top: 0px;
+        position: absolute;
+        left:10px;
+        top:300px;
+        max-height: 105px;
+    }
+    
+    #libraryButton{
+        margin-left: 0px;
+        position:fixed;
+        left:684px;
+        top:35px;
+    }
+
+    #cameraButton{
+        margin-left: 0px;
+        position:fixed;
+        left:680px;
+        top:115px;
+    }
+    
+    #actionIcon {
+        visibility: visible;
+        margin-left: 0px;
+        position:fixed;
+        left:683px;
+        top:235px;
+        width: 32px;
+    }
+
+    #infoButton{
+        visibility: visible;
+        margin-left: 0px;
+        position:fixed;
+        left:682px;
+        top:340px;
+        width: 36px;
+      
+    }
+}
+
+
+
 /* #### iPads Landscape #### */
 @media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape){
 

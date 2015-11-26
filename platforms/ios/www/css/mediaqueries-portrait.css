@@ -53,7 +53,7 @@
     }
 }
 
-/* #### iPhone 6 AND 6s */
+/* #### iPhone 6 AND 6s Portrait*/
 @media (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
   #kkk {
         width: 360px;
@@ -106,8 +106,8 @@
 
 }
 
-/* 6+ AND 6s+ */
-@media (device-width: 414px) and (device-height: 736px) {
+/* 6+ AND 6s+ Portrait*/
+@media (device-width: 414px) and (device-height: 736px) and (orientation: portrait) {
     #kkk {
         width: 397px;
     }
