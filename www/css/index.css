@@ -554,21 +554,27 @@ h1 {
 }
 
 /* #### iPads Portrait #### */
-@media screen and (device-width: 768px) and (device-height: 1024px){
+@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait){
 
     #kkk {
         width: 750px;
     }
 
     .gridpicture {
-        width:  148px;
-        height: 148px;
+        margin-left: 5px;
+        width:  138px;
+        height: 138px;
     }
 
     #gridFooter{
         margin-left: -8px;
         margin-right: -8px;
         width: 770px;
+    }
+
+    #container{
+        margin-left: 20px;
+        height: 979px;
     }
 
     #libraryButton {
@@ -645,6 +651,7 @@ h1 {
     }
 
     #container{
+        margin-left: 6px;
         height: 723px;
     }
 

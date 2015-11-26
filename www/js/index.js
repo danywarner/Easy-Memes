@@ -66,7 +66,7 @@ function fillGrid(){
             totalMemes = 345;
             break;
         case 768: //ipad 2, air, air2, pro, retina
-            xpictures = 30;
+            xpictures = 35;
             totalMemes = 360;
             break;
         case 375: //iphone 6
