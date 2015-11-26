@@ -370,7 +370,10 @@
         margin-left: 200px;
         width: 600px;
         max-width: 600px;
-        max-height: 175px;
+        height: 170px;
+        max-height: 170px;
+        font-size: 35px;
+        line-height: 1;
     }
     
     #topTextk{
@@ -381,6 +384,7 @@
 
     #bottomTextk {
         margin-top: -140px;
+        height: 135px;
         max-height: 135px;
     }
     

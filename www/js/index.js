@@ -190,30 +190,8 @@ var app = {
         $('.app').css('left', '0');
         $('.app').css('width', '100%');
         
-        ////FLURRY
-        if (window.plugins && window.plugins.flurry) {
-            var ua = navigator.userAgent.toLowerCase();
-            var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-            if (isAndroid) {
-                var androidKey = getAndroidKey();
-                window.plugins.flurry.startSession(androidKey, function () {
-                    console.log('AndroidFlurry Success!');
-                }, function () {
-                    alert('Flurry Error!');
-                });
-            } else {
-                var iOSKey = getiOSKey();
-                window.plugins.flurry.startSession(iOSKey, function () {
-                    console.log('iOS Flurry Success!');
-                    window.plugins.flurry.setSessionReportsOnCloseEnabled(true); // iOS only
-                    window.plugins.flurry.setSessionReportsOnPauseEnabled(true); // iOS only
-                }, function () {
-                    alert('Flurry Error!');
-                });
-            }
-        }
-        else{console.log("que paila");}
-        ////FLURRY
+        startFlurry();
+
         var userLang = window.localStorage.getItem("deviceLanguage");
         if(userLang === null){
             checkLanguage();
@@ -252,6 +230,32 @@ var app = {
 //        console.log('Received Event: ' + id);
     }
 };
+
+
+function startFlurry(){
+        if (window.plugins && window.plugins.flurry) {
+            var ua = navigator.userAgent.toLowerCase();
+            var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+            if (isAndroid) {
+                var androidKey = getAndroidKey();
+                window.plugins.flurry.startSession(androidKey, function () {
+                    console.log('AndroidFlurry Success!');
+                }, function () {
+                    alert('Flurry Error!');
+                });
+            } else {
+                var iOSKey = getiOSKey();
+                window.plugins.flurry.startSession(iOSKey, function () {
+                    console.log('iOS Flurry Success!');
+                    window.plugins.flurry.setSessionReportsOnCloseEnabled(true); // iOS only
+                    window.plugins.flurry.setSessionReportsOnPauseEnabled(true); // iOS only
+                }, function () {
+                    alert('Flurry Error!');
+                });
+            }
+        }
+        else{console.log("que paila");}
+    }
 
 
 ///MEMEDIT
@@ -321,15 +325,22 @@ function setVariables(){
     }
 
     if(screenWidth == 768){
-         $("#topTextk").css("fontSize", "44px");
-         $("#topTextk").css("line-height", "1");
-         $("#bottomTextk").css("fontSize", "44px");
-         $("#bottomTextk").css("line-height", "1");
+         // $("#topTextk").css("fontSize", "44px");
+         // $("#topTextk").css("line-height", "1");
+         // $("#bottomTextk").css("fontSize", "44px");
+         // $("#bottomTextk").css("line-height", "1");
+         // if(is_landscape()) {
+         //    alert("changing landscape font size!")
+         // }
     }    
     $("#topTextk").attr('placeholder',placeHolderTopText);
     $("#bottomTextk").attr('placeholder',placeHolderBtmText);
     $('#topTextk').bind('change', setCropedFalse);
     $('#bottomTextk').bind('change', setCropedFalse);
+}
+
+function is_landscape() {
+  return (window.innerWidth > window.innerHeight);
 }
 
 function start(fuente){
@@ -577,11 +588,11 @@ function crop(){
             lineHeight = 33;
         }
         if(screenWidth == 768){
-            fontSize = 30;
+            fontSize = 28.4;
             lineHeight = 30;
             ctx.lineWidth = 1;
             yTop = 32;
-            yBottom = 430;
+            yBottom = 407;
             if(w>h){
                 yBottom = 200;
             }

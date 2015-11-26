@@ -186,7 +186,10 @@
     #topTextk, #bottomTextk{
         width: 750px;
         max-width: 748px;
-        max-height: 200px;
+        height: 220px;
+        max-height: 220px;
+        font-size: 44px;
+        line-height: 1;
     }
     
     #topTextk{
@@ -196,8 +199,9 @@
     }
 
     #bottomTextk {
-        margin-top: -150px;
-        max-height: 150px;
+        margin-top: -180px;
+        height: 180px;
+        max-height: 180px;
     }
     
     #footer {
