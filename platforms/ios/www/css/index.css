@@ -553,7 +553,7 @@ h1 {
 
 }
 
-/* #### Tablets Portrait or Landscape #### */
+/* #### iPads Portrait #### */
 @media screen and (device-width: 768px) and (device-height: 1024px){
 
     #kkk {
@@ -609,6 +609,77 @@ h1 {
     #infoButton{
         width: 36px;
         margin-left: 650px;
+        padding-bottom: 2px;
+    }
+    #firstpage{
+        background-color: #dedede;
+    }
+}
+
+
+/* #### iPads Landscape #### */
+@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape){
+
+    #kkk {
+        margin-left: 200px;
+        width: 600px;
+    }
+
+    .gridpicture {
+        width:  140px;
+        height: 140px;
+    }
+
+    #gridFooter{
+        margin-left: -8px;
+        margin-right: -8px;
+        width: 770px;
+    }
+
+    #libraryButton {
+        margin-left: 860px;
+    }
+
+    #cameraButton {
+        margin-left: 15px;
+    }
+
+    #container{
+        height: 723px;
+    }
+
+    #topTextk, #bottomTextk{
+        margin-left: 200px;
+        width: 600px;
+        max-width: 600px;
+        max-height: 175px;
+        border: 1px solid green;
+    }
+    
+    #topTextk{
+    position: absolute;
+    left:10px;
+    top:90px;
+    }
+
+    #bottomTextk {
+        margin-top: -140px;
+        max-height: 135px;
+    }
+    
+    #footer {
+        margin-top: 645px;
+        
+    }
+    #actionIcon {
+        width: 28px;
+        padding-top: 7px;
+        margin-left: 20px;
+    }
+
+    #infoButton{
+        width: 36px;
+        margin-left: 920px;
         padding-bottom: 2px;
     }
     #firstpage{
