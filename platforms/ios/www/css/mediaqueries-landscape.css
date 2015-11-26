@@ -1,0 +1,153 @@
+/* #### iPhone 5 Landscape #### */
+@media (device-width: 320px) and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    
+    #header{
+        margin-top: 0px;
+        border-bottom: none;
+        height: 12px;
+    }
+
+    #kkk, #memeContainer{
+        padding: 0px;
+        margin: 0px;
+        margin-top: 2px;
+        margin-left: 3px;
+        border: none;
+        width: 289px;
+    }
+
+    #footer {
+        visibility: hidden;
+    }
+
+    #container{
+        margin-left: 18px;
+        margin-top: 0px;
+        height: 294px;
+    }
+
+    #topTextk, #bottomTextk{
+        width: 300px;
+        max-width: 284px;
+        margin-left: -4px;
+    }
+    #topTextk{
+        position: absolute;
+        left:10px;
+        top:30px;
+    }
+    #bottomTextk{
+        margin-top: 0px;
+        position: absolute;
+        left:10px;
+        top:230px;
+    }
+    
+    #libraryButton{
+        margin-left: 0px;
+        position:fixed;
+        left:522px;
+        top:23px;
+    }
+
+    #cameraButton{
+        margin-left: 0px;
+        position:fixed;
+        left:520px;
+        top:75px;
+    }
+    
+    #actionIcon {
+        visibility: visible;
+        margin-left: 0px;
+        position:fixed;
+        left:523px;
+        top:175px;
+        width: 32px;
+    }
+
+    #infoButton{
+        visibility: visible;
+        margin-left: 0px;
+        position:fixed;
+        left:520px;
+        top:275px;
+        width: 36px;
+      
+    }
+}
+
+
+
+
+
+/* #### iPads Landscape #### */
+@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape){
+
+    #kkk {
+        margin-left: 200px;
+        width: 600px;
+    }
+
+    .gridpicture {
+        width:  140px;
+        height: 140px;
+    }
+
+    #gridFooter{
+        margin-left: -8px;
+        margin-right: -8px;
+        width: 770px;
+    }
+
+    #libraryButton {
+        margin-left: 860px;
+    }
+
+    #cameraButton {
+        margin-left: 15px;
+    }
+
+    #container{
+        margin-left: 6px;
+        height: 723px;
+    }
+
+    #topTextk, #bottomTextk{
+        margin-left: 200px;
+        width: 600px;
+        max-width: 600px;
+        max-height: 175px;
+        border: 1px solid green;
+    }
+    
+    #topTextk{
+    position: absolute;
+    left:10px;
+    top:90px;
+    }
+
+    #bottomTextk {
+        margin-top: -140px;
+        max-height: 135px;
+    }
+    
+    #footer {
+        margin-top: 645px;
+        
+    }
+    #actionIcon {
+        width: 28px;
+        padding-top: 7px;
+        margin-left: 20px;
+    }
+
+    #infoButton{
+        width: 36px;
+        margin-left: 920px;
+        padding-bottom: 2px;
+    }
+    #firstpage{
+        background-color: #dedede;
+    }
+}
