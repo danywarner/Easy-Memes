@@ -64,20 +64,20 @@
         margin-left: 0px;
         position:fixed;
         left:435px;
-        top:75px;
+        top:115px;
     }
     
     #actionIcon {
         visibility: visible;
         margin-left: 0px;
         position:fixed;
-        left:443px;
-        top:175px;
+        left:441px;
+        top:245px;
         width: 32px;
     }
 
     #infoButton{
-        visibility: visible;
+        visibility: hidden;
         margin-left: 0px;
         position:fixed;
         left:440px;
@@ -149,7 +149,7 @@
         margin-left: 0px;
         position:fixed;
         left:520px;
-        top:75px;
+        top:115px;
     }
     
     #actionIcon {
@@ -157,12 +157,12 @@
         margin-left: 0px;
         position:fixed;
         left:523px;
-        top:175px;
+        top:235px;
         width: 32px;
     }
 
     #infoButton{
-        visibility: visible;
+        visibility: hidden;
         margin-left: 0px;
         position:fixed;
         left:520px;
@@ -240,7 +240,7 @@
         margin-left: 0px;
         position:fixed;
         left:620px;
-        top:95px;
+        top:145px;
     }
     
     #actionIcon {
@@ -248,12 +248,12 @@
         margin-left: 0px;
         position:fixed;
         left:623px;
-        top:215px;
+        top:305px;
         width: 32px;
     }
 
     #infoButton{
-        visibility: visible;
+        visibility: hidden;
         margin-left: 0px;
         position:fixed;
         left:622px;
@@ -330,7 +330,7 @@
         margin-left: 0px;
         position:fixed;
         left:680px;
-        top:115px;
+        top:165px;
     }
     
     #actionIcon {
@@ -338,12 +338,12 @@
         margin-left: 0px;
         position:fixed;
         left:683px;
-        top:235px;
+        top:325px;
         width: 32px;
     }
 
     #infoButton{
-        visibility: visible;
+        visibility: hidden;
         margin-left: 0px;
         position:fixed;
         left:682px;
