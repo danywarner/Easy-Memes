@@ -314,10 +314,10 @@ function setVariables(){
     }
 
     if(screenWidth == 320){
-         $("#topTextk").css("fontSize", "29px");
-         $("#topTextk").css("line-height", "1");
-         $("#bottomTextk").css("fontSize", "29px");
-         $("#bottomTextk").css("line-height", "1");
+         // $("#topTextk").css("fontSize", "29px");
+         // $("#topTextk").css("line-height", "1");
+         // $("#bottomTextk").css("fontSize", "29px");
+         // $("#bottomTextk").css("line-height", "1");
     }
     else if(screenWidth == 375){
          $("#topTextk").css("line-height", "1");
