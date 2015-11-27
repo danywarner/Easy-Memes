@@ -571,7 +571,7 @@ function crop(){
             yBottom = 396;
         }
         if(screenWidth == 768){
-            fontSize = 28.4;
+            fontSize = 29;
             lineHeight = 30;
             ctx.lineWidth = 1;
             yTop = 32;
