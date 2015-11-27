@@ -90,10 +90,6 @@
 	<array>
 		<string>SanFrancisco.ttf</string>
 	</array>
-	<key>UIInterfaceOrientation</key>
-	<array>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-	</array>
 	<key>UILaunchImages</key>
 	<array>
 		<dict>
@@ -201,12 +197,7 @@
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 		<string>UIInterfaceOrientationPortrait</string>
-	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>

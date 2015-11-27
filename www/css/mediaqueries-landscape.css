@@ -210,6 +210,10 @@
         width: 339px;
         max-width: 339px;
         margin-left: -5px;
+        font-size: 24px;
+        line-height: 1;
+        height: 120px;
+        max-height: 120px;
     }
     #topTextk{
         position: absolute;
@@ -220,8 +224,9 @@
         margin-top: 0px;
         position: absolute;
         left:10px;
-        top:280px;
-        max-height: 85px;
+        top:297px;
+        height: 72px;
+        max-height: 72px;
     }
     
     #libraryButton{

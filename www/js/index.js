@@ -320,8 +320,8 @@ function setVariables(){
          // $("#bottomTextk").css("line-height", "1");
     }
     else if(screenWidth == 375){
-         $("#topTextk").css("line-height", "1");
-         $("#bottomTextk").css("line-height", "1");
+         // $("#topTextk").css("line-height", "1");
+         // $("#bottomTextk").css("line-height", "1");
     }
 
     if(screenWidth == 768){
@@ -582,6 +582,7 @@ function crop(){
             yTop = 35;
             fontSize = 36;
             lineHeight = 35;
+            yBottom = 425;
         }
         if(screenWidth == 414){
             fontSize = 34;
