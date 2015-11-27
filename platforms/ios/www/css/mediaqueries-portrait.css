@@ -27,12 +27,18 @@
         padding-top: 7px;
     }
 
-    #backwardButton{
-        margin-left: 40px;
+    #topTextk, #bottomTextk {
+        font-size: 29px;
+        line-height: 1;
+        height: 142px;
+        max-height: 142px;
     }
 
-    #forwardButton{
-        margin-left: 160px;
+    #bottomTextk{
+        height: 85px;
+        max-height: 85px;
+        margin-top: -86px;
+
     }
 }
 

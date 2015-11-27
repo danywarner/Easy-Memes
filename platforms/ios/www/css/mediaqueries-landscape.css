@@ -1,6 +1,11 @@
 /* #### iPhone 4s Landscape #### */
 @media (device-width: 320px) and (device-height: 480px) and (orientation: landscape) {
     
+    .gridpicture {
+        width: 91px;
+        height: 91px;
+    }
+
     #header{
         margin-top: 0px;
         border-bottom: none;
@@ -21,7 +26,7 @@
     }
 
     #container{
-        margin-left: 18px;
+        margin-left: 1px;
         margin-top: 0px;
         height: 294px;
     }
@@ -30,6 +35,8 @@
         width: 300px;
         max-width: 284px;
         margin-left: -4px;
+        font-size: 27px;
+        line-height: 1;
     }
     #topTextk{
         position: absolute;
@@ -41,8 +48,9 @@
         margin-top: 0px;
         position: absolute;
         left:10px;
-        top:230px;
-        max-height: 85px;
+        top:235px;
+        height: 80px;
+        max-height: 80px;
     }
     
     #libraryButton{
