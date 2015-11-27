@@ -53,6 +53,11 @@
         width: 28px;
         padding-top: 8px;
     }
+
+    #container{
+        height: 523px;
+    }
+
     #infoButton{
         width: 36px;
         margin-left: 237px;
