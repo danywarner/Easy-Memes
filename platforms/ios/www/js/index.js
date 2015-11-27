@@ -313,26 +313,7 @@ function setVariables(){
         backText.innerHTML = "Back";
     }
 
-    if(screenWidth == 320){
-         // $("#topTextk").css("fontSize", "29px");
-         // $("#topTextk").css("line-height", "1");
-         // $("#bottomTextk").css("fontSize", "29px");
-         // $("#bottomTextk").css("line-height", "1");
-    }
-    else if(screenWidth == 375){
-         // $("#topTextk").css("line-height", "1");
-         // $("#bottomTextk").css("line-height", "1");
-    }
-
-    if(screenWidth == 768){
-         // $("#topTextk").css("fontSize", "44px");
-         // $("#topTextk").css("line-height", "1");
-         // $("#bottomTextk").css("fontSize", "44px");
-         // $("#bottomTextk").css("line-height", "1");
-         // if(is_landscape()) {
-         //    alert("changing landscape font size!")
-         // }
-    }    
+       
     $("#topTextk").attr('placeholder',placeHolderTopText);
     $("#bottomTextk").attr('placeholder',placeHolderBtmText);
     $('#topTextk').bind('change', setCropedFalse);
@@ -585,8 +566,9 @@ function crop(){
             yBottom = 425;
         }
         if(screenWidth == 414){
-            fontSize = 34;
+            fontSize = 38;
             lineHeight = 33;
+            yBottom = 396;
         }
         if(screenWidth == 768){
             fontSize = 28.4;

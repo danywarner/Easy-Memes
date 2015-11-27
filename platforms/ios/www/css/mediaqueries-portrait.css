@@ -160,12 +160,15 @@
     #topTextk, #bottomTextk {
         width: 395px;
         max-width: 395px;
-        max-height: 140px;
+        height: 147px;
+        max-height: 147px;
+        font-size: 30px;
+        line-height: 1;
     }
 
     #bottomTextk {
-        margin-top: -108px;
-         max-height: 110px;
+        margin-top: -119px;
+         max-height: 117px;
     }
      #footer {
         margin-top: 600px;
