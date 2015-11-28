@@ -1,0 +1,256 @@
+/* LG G4, G3, Note 2, S5, S4, S4 mini, S3, Nexus 5, HTC One, HTC Evo 3D, Xperia: Z, S, P, Xiaomi Mi4, Mi3, ZTE Grand S   */
+@media screen and (device-width: 360px) and (device-height: 640px){
+    .gridpicture{
+        width:98px;
+        height:98px;
+        float: left;
+        margin: 5px;
+        margin-left: 12px;
+    }
+    #container{
+        height: 530px;
+        margin-top: 10px;
+    }
+
+    #libraryButton{
+        margin-left: 210px;
+        width: 36px;
+        height: 36px;
+        border: none;
+    }
+
+    #topTextk{
+       font-size: 27px;
+        max-height: 130px;
+    }
+    #bottomTextk {
+        margin-top: -26vw;
+        font-size: 27px;
+        max-height: 89px;
+    }
+
+    #footer {
+        margin-right: -8px;
+        margin-left: -8px;
+        padding-left: 15px;
+        margin-top: 440px;
+    }
+    #infoButton{
+        margin-left: 260px;
+        width: 38px;
+        height: 38px;
+    }
+}
+
+/* LG Optimus G, Nexus 4 */
+@media screen and (device-width: 384px) and (device-height: 640px){
+   
+    #topTextk{
+       font-size: 27px;
+    }
+    #bottomTextk {
+        font-size: 27px;
+        max-height: 91px;
+    }
+    #container{
+        margin-top: 0px;
+        height: 540px;
+        margin-left: 7px;
+    }
+
+
+    #infoButton{
+        width: 38px;
+        height: 38px;
+        margin-left: 290px;
+    }
+}
+
+/* Galaxy Note */
+@media screen and (device-width: 400px) and (device-height: 640px){
+   
+    #topTextk{
+        line-height : 1;
+       font-size: 27px;
+    }
+    #bottomTextk {
+        line-height : 1;
+        font-size: 27px;
+        max-height: 91px;
+    }
+    #container{
+        margin-top: 0px;
+        height: 540px;
+        margin-left: 7px;
+    }
+
+
+    #infoButton{
+        width: 38px;
+        height: 38px;
+        margin-left: 290px;
+    }
+}
+
+/* Nexus S, Galaxy S3 mini, S2, S */
+@media screen and (device-width: 320px) and (device-height: 533px), (device-height: 534px)  {
+   
+    #topTextk{
+       font-size: 23px;
+    }
+    #bottomTextk {
+        margin-top: -27vw;
+        font-size: 23px;
+        max-height: 91px;
+    }
+    #container{
+        margin-top: 8px;
+        margin-left: 7px;
+    }
+
+    #libraryButton{
+        margin-left: 170px;
+        width: 30px;
+        height: 30px;
+        border: none;
+    }
+
+    #footer{
+        margin-top: 390px;
+    }
+
+    #infoButton{
+        width: 34px;
+        height: 34px;
+    }
+}
+
+/* nexus 10 */
+@media screen and (device-width: 800px) and (device-height: 1280px){
+
+    .gridpicture{
+        width:138px;
+        height:138px;
+        float: left;
+        margin: 5px;
+        margin-left: 8px;
+    }
+    #container{
+        margin-top: 0px;
+        height: 1180px;
+        margin-left: 18px;
+    }
+    
+    
+    #header{
+        height: 50px;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+    #kkk, #memeContainer{
+       
+    }
+
+    #BackToGridk{
+        font-size: 29px;
+        margin-left: 13px;
+        margin-top: -6px;
+    }
+
+    #libraryButton{
+        content: url(../icons/plus2.png);
+        margin-left: 600px;
+        width: 40px;
+        height: 40px;
+        margin-top: 3px;
+    }
+
+    #cameraButton {
+        content: url(../icons/camera3.png);
+        width: 54px;
+        height: 40px;
+        margin-top: 3px;
+    }
+
+    #topTextk{
+        position: absolute;
+        left:10px;
+        top:120px;
+        font-size: 50px;
+        max-height: 165px;
+    }
+    #bottomTextk {
+        margin-top: -25vw;
+        height: 85px;
+        max-height: 165px;
+        font-size: 50px;
+    }
+
+    #footer {
+        margin-right: -8px;
+        margin-left: -8px;
+        padding-left: 15px;
+        margin-top: 1050px;
+    }
+
+    #actionIcon{
+        width: 60px;
+        padding-top: 8px;
+    }
+    #infoButton{
+        width: 60px;
+        height: 60px;
+        margin-left: 650px;
+    }
+}
+
+
+/* #### all #### */
+/*@media screen and (device-width: 412px) and (device-height: 732px){
+
+}*/
+
+
+/* #### JHOHAN #### */
+/*@media screen and (device-width: 360px) and (device-height: 592px){
+
+    #header{
+        border: 1px solid blue;
+    }
+    #kkk, #memecontainer {
+        width: 343px;
+      /*  height: 750px;
+    }
+
+    #footer {
+        margin-top: 450px;
+    }
+
+    #actionIcon {
+        width: 26px;
+        padding-top: 2px;
+    }
+    #container{
+        height: 512px;
+    }
+    .gridpicture {
+        width: 95px;
+        height: 95px;
+        margin-left: 16px;
+        margin-bottom: 10px;
+    }
+
+    #infoButton{
+        width: 34px;
+        margin-left: 245px;
+        padding-top: 7px;
+    }
+
+
+    #gridFooter{
+        margin-left: -8px;
+        margin-right: -8px;
+        margin-top:  570px;   }
+}*/
+
+

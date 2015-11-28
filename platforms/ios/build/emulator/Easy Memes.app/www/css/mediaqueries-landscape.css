@@ -1,0 +1,430 @@
+/* #### iPhone 4s Landscape #### */
+@media (device-width: 320px) and (device-height: 480px) and (orientation: landscape) {
+    
+    .gridpicture {
+        width: 91px;
+        height: 91px;
+    }
+
+    #header{
+        margin-top: 0px;
+        border-bottom: none;
+        height: 12px;
+    }
+
+    #kkk, #memeContainer{
+        padding: 0px;
+        margin: 0px;
+        margin-top: 2px;
+        margin-left: 3px;
+        border: none;
+        width: 289px;
+    }
+
+    #footer {
+        visibility: hidden;
+    }
+
+    #container{
+        margin-left: 1px;
+        margin-top: 0px;
+        height: 294px;
+    }
+
+    #topTextk, #bottomTextk{
+        width: 300px;
+        max-width: 284px;
+        margin-left: -4px;
+        font-size: 27px;
+        line-height: 1;
+    }
+    #topTextk{
+        position: absolute;
+        left:10px;
+        top:30px;
+        max-height: 145px;
+    }
+    #bottomTextk{
+        margin-top: 0px;
+        position: absolute;
+        left:10px;
+        top:235px;
+        height: 80px;
+        max-height: 80px;
+    }
+    
+    #libraryButton{
+        margin-left: 0px;
+        position:fixed;
+        left:441px;
+        top:23px;
+    }
+
+    #cameraButton{
+        margin-left: 0px;
+        position:fixed;
+        left:435px;
+        top:115px;
+    }
+    
+    #actionIcon {
+        visibility: visible;
+        margin-left: 0px;
+        position:fixed;
+        left:441px;
+        top:245px;
+        width: 32px;
+    }
+
+    #infoButton{
+        visibility: hidden;
+        margin-left: 0px;
+        position:fixed;
+        left:440px;
+        top:275px;
+        width: 36px;
+      
+    }
+}
+
+/* #### iPhone 5 Landscape #### */
+@media (device-width: 320px) and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    
+    #header{
+        margin-top: 0px;
+        border-bottom: none;
+        height: 12px;
+    }
+
+    #kkk, #memeContainer{
+        padding: 0px;
+        margin: 0px;
+        margin-top: 2px;
+        margin-left: 3px;
+        border: none;
+        width: 289px;
+    }
+
+    #footer {
+        visibility: hidden;
+    }
+
+    #container{
+        margin-left: 18px;
+        margin-top: 0px;
+        height: 294px;
+    }
+
+    #topTextk, #bottomTextk{
+        width: 300px;
+        max-width: 284px;
+        margin-left: -4px;
+        font-size: 27px;
+        line-height: 1;
+        height: 132px;
+        max-height: 132px;
+    }
+    #topTextk{
+        position: absolute;
+        left:10px;
+        top:30px;
+    }
+    #bottomTextk{
+        margin-top: 0px;
+        position: absolute;
+        left:10px;
+        top:233px;
+        height: 83px;
+        max-height: 83px;
+    }
+    
+    #libraryButton{
+        margin-left: 0px;
+        position:fixed;
+        left:524px;
+        top:23px;
+    }
+
+    #cameraButton{
+        margin-left: 0px;
+        position:fixed;
+        left:520px;
+        top:115px;
+    }
+    
+    #actionIcon {
+        visibility: visible;
+        margin-left: 0px;
+        position:fixed;
+        left:525px;
+        top:255px;
+        width: 32px;
+    }
+
+    #infoButton{
+        visibility: hidden;
+        margin-left: 0px;
+        position:fixed;
+        left:520px;
+        top:275px;
+        width: 36px;
+      
+    }
+}
+
+
+/* #### iPhone 6 / 6s Landscape #### */
+@media (device-width: 375px) and (device-height: 667px) and (orientation: landscape) {
+    
+    #header{
+        margin-top: 0px;
+        border-bottom: none;
+        height: 12px;
+    }
+
+    #kkk, #memeContainer{
+        padding: 0px;
+        margin: 0px;
+        margin-top: 2px;
+        margin-left: 3px;
+        border: none;
+        width: 343px;
+    }
+
+    .gridpicture{
+        width: 85px;
+        height: 85px;
+    }
+
+    #footer {
+        visibility: hidden;
+    }
+
+    #container{
+        margin-left: 18px;
+        margin-top: 0px;
+        height: 349px;
+    }
+
+    #topTextk, #bottomTextk{
+        width: 339px;
+        max-width: 339px;
+        margin-left: -5px;
+        font-size: 24px;
+        line-height: 1;
+        height: 120px;
+        max-height: 120px;
+    }
+    #topTextk{
+        position: absolute;
+        left:10px;
+        top:30px;
+    }
+    #bottomTextk{
+        margin-top: 0px;
+        position: absolute;
+        left:10px;
+        top:297px;
+        height: 72px;
+        max-height: 72px;
+    }
+    
+    #libraryButton{
+        margin-left: 0px;
+        position:fixed;
+        left:624px;
+        top:23px;
+    }
+
+    #cameraButton{
+        margin-left: 0px;
+        position:fixed;
+        left:620px;
+        top:145px;
+    }
+    
+    #actionIcon {
+        visibility: visible;
+        margin-left: 0px;
+        position:fixed;
+        left:623px;
+        top:305px;
+        width: 32px;
+    }
+
+    #infoButton{
+        visibility: hidden;
+        margin-left: 0px;
+        position:fixed;
+        left:622px;
+        top:320px;
+        width: 36px;
+      
+    }
+}
+
+
+
+/* #### iPhone 6+ / 6s+ Landscape #### */
+@media (device-width: 414px) and (device-height: 736px) and (orientation: landscape) {
+    
+    #header{
+        margin-top: 0px;
+        border-bottom: none;
+        height: 12px;
+    }
+
+    #kkk, #memeContainer{
+        padding: 0px;
+        margin: 0px;
+        margin-top: 2px;
+        margin-left: 3px;
+        border: none;
+        width: 383px;
+    }
+
+    .gridpicture{
+        width: 96px;
+        height: 96px;
+    }
+
+    #footer {
+        visibility: hidden;
+    }
+
+    #container{
+        margin-left: 18px;
+        margin-top: 0px;
+        height: 388px;
+    }
+
+    #topTextk, #bottomTextk{
+        width: 377px;
+        max-width: 377px;
+        margin-left: -4px;
+        font-size: 28px;
+        line-height: 1;
+    }
+    #topTextk{
+        max-height: 140px;
+        position: absolute;
+        left:10px;
+        top:30px;
+    }
+    #bottomTextk{
+        margin-top: 0px;
+        position: absolute;
+        left:10px;
+        top:300px;
+        max-height: 108px;
+    }
+    
+    #libraryButton{
+        margin-left: 0px;
+        position:fixed;
+        left:684px;
+        top:35px;
+    }
+
+    #cameraButton{
+        margin-left: 0px;
+        position:fixed;
+        left:680px;
+        top:165px;
+    }
+    
+    #actionIcon {
+        visibility: visible;
+        margin-left: 0px;
+        position:fixed;
+        left:683px;
+        top:325px;
+        width: 32px;
+    }
+
+    #infoButton{
+        visibility: hidden;
+        margin-left: 0px;
+        position:fixed;
+        left:682px;
+        top:340px;
+        width: 36px;
+      
+    }
+}
+
+
+
+/* #### iPads Landscape #### */
+@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape){
+
+    #kkk {
+        margin-left: 200px;
+        width: 600px;
+    }
+
+    .gridpicture {
+        width:  140px;
+        height: 140px;
+    }
+
+    #gridFooter{
+        margin-left: -8px;
+        margin-right: -8px;
+        width: 770px;
+    }
+
+    #libraryButton {
+        margin-left: 860px;
+    }
+
+    #cameraButton {
+        margin-left: 15px;
+    }
+
+    #container{
+        margin-left: 6px;
+        height: 723px;
+    }
+
+    #topTextk, #bottomTextk{
+        margin-left: 200px;
+        width: 600px;
+        max-width: 600px;
+        height: 170px;
+        max-height: 170px;
+        font-size: 35px;
+        line-height: 1;
+    }
+    
+    #topTextk{
+    position: absolute;
+    left:10px;
+    top:90px;
+    }
+
+    #bottomTextk {
+        margin-top: -140px;
+        height: 135px;
+        max-height: 135px;
+    }
+    
+    #footer {
+        margin-top: 645px;
+        
+    }
+    #actionIcon {
+        width: 28px;
+        padding-top: 7px;
+        margin-left: 20px;
+    }
+
+    #infoButton{
+        width: 36px;
+        margin-left: 920px;
+        padding-bottom: 2px;
+    }
+    #firstpage{
+        background-color: #dedede;
+    }
+}

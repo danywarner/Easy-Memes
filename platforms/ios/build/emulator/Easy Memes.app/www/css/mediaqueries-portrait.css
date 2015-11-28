@@ -1,0 +1,258 @@
+
+/* #### iPhone 4s */
+@media (device-width: 320px) and (device-height: 480px) and (orientation: portrait) {
+
+    #footer {
+        margin-top: 360px;
+    }
+    
+    #actionIcon {
+        width: 26px;
+        padding-top: 2px;
+    }
+
+    #container{
+        height: 435px;
+    }
+
+    .gridpicture {
+        width: 85px;
+        height: 85px;
+        margin-left: 15px;
+    }
+    
+    #infoButton{
+        width: 34px;
+        margin-left: 245px;
+        padding-top: 7px;
+    }
+
+    #topTextk, #bottomTextk {
+        font-size: 29px;
+        line-height: 1;
+        height: 142px;
+        max-height: 142px;
+    }
+
+    #bottomTextk{
+        height: 85px;
+        max-height: 85px;
+        margin-top: -86px;
+
+    }
+}
+
+/* #### iPhone 5 Portrait #### */
+@media (device-width: 320px) and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and(orientation: portrait) {
+    
+    #footer {
+        margin-top: 438px;
+    }
+
+    #actionIcon {
+        width: 28px;
+        padding-top: 8px;
+    }
+
+    #container{
+        height: 523px;
+    }
+
+    #infoButton{
+        width: 36px;
+        margin-left: 237px;
+    }
+
+    #topTextk, #bottomTextk {
+        font-size: 29px;
+        line-height: 1;
+        height: 142px;
+        max-height: 142px;
+    }
+
+    #bottomTextk{
+        height: 85px;
+        max-height: 85px;
+        margin-top: -85px;
+
+    }
+}
+
+/* #### iPhone 6 AND 6s Portrait*/
+@media (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
+  #kkk {
+        width: 360px;
+    }
+
+    #libraryButton {
+        margin-left: 225px;
+    }
+    #cameraButton {
+        margin-left: 10px;
+    }
+
+    .gridpicture {
+        width: 85px;
+        height: 85px;
+        margin-left: 5px;
+    }
+
+     #gridFooter{
+        width: 375px;
+    }
+
+    #container {
+        height: 622px;
+    }
+
+    #topTextk, #bottomTextk {
+        font-size: 26px;
+        line-height: 1;
+        width: 360px;
+        max-width: 358px;
+        height: 127px;
+        max-height: 127px;
+    }
+    #bottomTextk {
+        margin-top: -80px;
+        height: 78px;
+        max-height: 78px;
+    }
+
+    #footer {
+        margin-top: 540px;
+    }
+    #actionIcon {
+        width: 28px;
+        padding-top: 8px;
+        margin-left: 7px;
+    }
+    #infoButton{
+        width: 36px;
+        margin-left: 280px;
+    }
+
+}
+
+/* 6+ AND 6s+ Portrait*/
+@media (device-width: 414px) and (device-height: 736px) and (orientation: portrait) {
+    #kkk {
+        width: 397px;
+    }
+    #libraryButton {
+        margin-left: 260px;
+    }
+
+    .gridpicture {
+        width: 96px;
+        height: 96px;
+        margin-left: 4px;
+    }
+
+    #gridFooter{
+        width: 420px;
+    }
+
+    #container{
+        height: 691px;
+    }
+
+    #topTextk, #bottomTextk {
+        width: 395px;
+        max-width: 395px;
+        height: 147px;
+        max-height: 147px;
+        font-size: 30px;
+        line-height: 1;
+    }
+
+    #bottomTextk {
+        margin-top: -119px;
+         max-height: 117px;
+    }
+     #footer {
+        margin-top: 600px;
+    }
+    #infoButton{
+        width: 48px;
+        margin-left: 305px;
+        margin-top: -2px;
+    }
+
+
+}
+
+/* #### iPads Portrait #### */
+@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait){
+
+    #kkk {
+        width: 750px;
+    }
+
+    .gridpicture {
+        margin-left: 5px;
+        width:  138px;
+        height: 138px;
+    }
+
+    #gridFooter{
+        margin-left: -8px;
+        margin-right: -8px;
+        width: 770px;
+    }
+
+    #container{
+        margin-left: 20px;
+        height: 979px;
+    }
+
+    #libraryButton {
+        margin-left: 590px;
+    }
+
+    #cameraButton {
+        margin-left: 15px;
+    }
+
+    #topTextk, #bottomTextk{
+        width: 750px;
+        max-width: 748px;
+        height: 220px;
+        max-height: 220px;
+        font-size: 44px;
+        line-height: 1;
+    }
+    
+    #topTextk{
+    position: absolute;
+    left:10px;
+    top:90px;
+    }
+
+    #bottomTextk {
+        margin-top: -180px;
+        height: 180px;
+        max-height: 180px;
+    }
+    
+    #footer {
+        margin-top: 895px;
+        
+    }
+    #actionIcon {
+        width: 28px;
+        padding-top: 7px;
+        margin-left: 20px;
+    }
+
+    #infoButton{
+        width: 36px;
+        margin-left: 650px;
+        padding-bottom: 2px;
+    }
+    #firstpage{
+        background-color: #dedede;
+    }
+}
+
+
