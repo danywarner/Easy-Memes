@@ -189,22 +189,27 @@
         top:255px;
         
     }
-
-    #infoButton{
-        visibility: hidden;
-        margin-left: 0px;
-        position:fixed;
-        left:520px;
-        top:275px;
-        width: 36px;
-      
-    }
 }
 
 
 /* #### iPhone 6 / 6s Landscape #### */
 @media (device-width: 375px) and (device-height: 667px) and (orientation: landscape) {
     
+    
+    .footer-menu{
+        height: 17px;
+        margin-top: -3px;
+    }
+
+    #gridFooter {
+
+        padding-top: 0px;
+    }
+
+    #pageIndicator {
+        margin-top: 0px;
+    }
+
     #header{
         margin-top: 0px;
         border-bottom: none;
@@ -229,10 +234,22 @@
         visibility: hidden;
     }
 
+    #backArrow {
+        position:fixed;
+        left:5px;
+        top:3px;
+    }
+
+    #BackToGridk {
+        position:fixed;
+        left:10px;
+        top:-9px;
+    }
+
     #container{
         margin-left: 18px;
         margin-top: 0px;
-        height: 349px;
+        height: 359px;
     }
 
     #topTextk, #bottomTextk{
@@ -278,17 +295,7 @@
         position:fixed;
         left:623px;
         top:305px;
-        width: 32px;
-    }
-
-    #infoButton{
-        visibility: hidden;
-        margin-left: 0px;
-        position:fixed;
-        left:622px;
-        top:320px;
-        width: 36px;
-      
+        
     }
 }
 
