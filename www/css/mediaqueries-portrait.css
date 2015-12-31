@@ -2,13 +2,39 @@
 /* #### iPhone 4s */
 @media (device-width: 320px) and (device-height: 480px) and (orientation: portrait) {
 
-    #footer {
-        margin-top: 360px;
+    #backArrow {
+        position:fixed;
+        left:8px;
+        top:32px;
+    }
+
+    #BackToGridk {
+        position:fixed;
+        left:12px;
+        top:20px;
+    }
+
+    #libraryButton {
+        margin-top: 0px;
+        margin-left: 0px;
+        position:fixed;
+        left:255px;
+        top:33px;
+    }
+
+    #cameraButton {
+        position:fixed;
+        left:276px;
+        top:19px;
     }
     
-    #actionIcon {
-        width: 26px;
-        padding-top: 2px;
+    #footer {
+        margin-top: 372px;
+    }
+
+       #actionIcon {
+        margin-left: 8px;
+        margin-top: 9px;
     }
 
     #container{
@@ -22,8 +48,8 @@
     }
     
     #infoButton{
-        width: 34px;
-        margin-left: 245px;
+        
+        margin-left: 242px;
         padding-top: 7px;
     }
 
@@ -106,7 +132,8 @@
 
 /* #### iPhone 6 AND 6s Portrait*/
 @media (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
-  #kkk {
+  
+    #kkk {
         width: 360px;
     }
 
