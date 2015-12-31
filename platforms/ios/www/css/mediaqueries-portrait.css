@@ -2,7 +2,19 @@
 /* #### iPhone 4s */
 @media (device-width: 320px) and (device-height: 480px) and (orientation: portrait) {
 
-    
+     .footer-menu{
+        height: 14px;
+        margin-top: 0px;
+    }
+
+    #gridFooter {
+
+        padding-top: 0px;
+    }
+
+    #pageIndicator {
+        margin-top: 0px;
+    }
 
     #libraryButton {
         margin-top: 0px;
@@ -28,7 +40,7 @@
     }
 
     #container{
-        height: 435px;
+        height: 445px;
     }
 
     .gridpicture {
@@ -61,6 +73,19 @@
 /* #### iPhone 5 Portrait #### */
 @media (device-width: 320px) and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and(orientation: portrait) {
     
+     .footer-menu{
+        height: 17px;
+        margin-top: -3px;
+    }
+
+    #gridFooter {
+
+        padding-top: 0px;
+    }
+
+    #pageIndicator {
+        margin-top: 0px;
+    }
 
     #footer {
         margin-top: 460px;
@@ -86,7 +111,7 @@
     }
 
     #container{
-        height: 523px;
+        height: 533px;
     }
 
     #infoButton{
@@ -177,6 +202,20 @@
 /* 6+ AND 6s+ Portrait*/
 @media (device-width: 414px) and (device-height: 736px) and (orientation: portrait) {
 
+    .footer-menu{
+        height: 17px;
+        margin-top: -3px;
+    }
+
+    #gridFooter {
+
+        padding-top: 0px;
+    }
+
+    #pageIndicator {
+        margin-top: 0px;
+    }
+
     #kkk {
         width: 397px;
     }
@@ -206,7 +245,7 @@
     }
 
     #container{
-        height: 691px;
+        height: 701px;
     }
 
     #topTextk, #bottomTextk {
@@ -242,6 +281,20 @@
 /* #### iPads Portrait #### */
 @media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait){
 
+    .footer-menu{
+        height: 14px;
+        margin-top: 0px;
+    }
+
+    #gridFooter {
+
+        padding-top: 0px;
+    }
+
+    #pageIndicator {
+        margin-top: 0px;
+    }
+
     #kkk {
         width: 750px;
     }
@@ -260,7 +313,7 @@
 
     #container{
         margin-left: 20px;
-        height: 979px;
+        height: 989px;
     }
 
     #libraryButton {
