@@ -45,13 +45,39 @@
 /* #### iPhone 5 Portrait #### */
 @media (device-width: 320px) and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and(orientation: portrait) {
     
+    #backArrow {
+        position:fixed;
+        left:8px;
+        top:32px;
+    }
+
+    #BackToGridk {
+        position:fixed;
+        left:12px;
+        top:20px;
+    }
+
     #footer {
-        margin-top: 438px;
+        margin-top: 460px;
     }
 
     #actionIcon {
-        width: 28px;
-        padding-top: 8px;
+        margin-left: 8px;
+        margin-top: 9px;
+    }
+
+    #libraryButton {
+        margin-top: 0px;
+        margin-left: 0px;
+        position:fixed;
+        left:250px;
+        top:33px;
+    }
+
+    #cameraButton {
+        position:fixed;
+        left:276px;
+        top:19px;
     }
 
     #container{
@@ -59,8 +85,8 @@
     }
 
     #infoButton{
-        width: 36px;
-        margin-left: 237px;
+        
+        margin-left: 242px;
     }
 
     #topTextk, #bottomTextk {
@@ -89,6 +115,7 @@
     }
     #cameraButton {
         margin-left: 10px;
+
     }
 
     .gridpicture {
