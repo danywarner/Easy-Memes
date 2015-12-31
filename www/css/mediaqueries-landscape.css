@@ -1,6 +1,19 @@
 /* #### iPhone 4s Landscape #### */
 @media (device-width: 320px) and (device-height: 480px) and (orientation: landscape) {
     
+    
+    #backArrow {
+        position:fixed;
+        left:5px;
+        top:3px;
+    }
+
+    #BackToGridk {
+        position:fixed;
+        left:10px;
+        top:-9px;
+    }
+
     .gridpicture {
         width: 91px;
         height: 91px;
@@ -73,18 +86,8 @@
         position:fixed;
         left:441px;
         top:245px;
-        width: 32px;
     }
 
-    #infoButton{
-        visibility: hidden;
-        margin-left: 0px;
-        position:fixed;
-        left:440px;
-        top:275px;
-        width: 36px;
-      
-    }
 }
 
 /* #### iPhone 5 Landscape #### */
@@ -123,7 +126,6 @@
     }
 
     #kkk, #memeContainer{
-        border-radius: 5px;
         padding: 0px;
         margin: 0px;
         margin-top: 2px;
