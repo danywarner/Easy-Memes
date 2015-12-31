@@ -21,6 +21,7 @@ var imgCrop;
 var screenWidth;
 var screenHeight;
 var kkk;
+var reviewed;
 
 function takePicture(){
     navigator.camera.getPicture(onSuccess, onFail, { 
@@ -57,23 +58,34 @@ function onFail(message) {
 
 function fillGrid(){
 
-	var date = new Date();
-	var currentMonth = date.getMonth();
-	var currentYear = date.getYear();
-	var december = false;
-	if(currentMonth == 11 && currentYear == 115) {
-		december = true;
-		strings = ["asian.jpg", "1990.jpg", "angryschool.jpg", "asianfather.jpg", "badluckbrian.jpg", "beargrills.jpg", "butthurtdweller.jpg", "philosoraptor.jpg", "chinesekid.jpg", "chubbygirl.jpg", "attractiveconv.jpg", "scumbaggirl.jpg", "clarity.jpg", "confessionkid.jpg", "collegefreshman.jpg", "correction.jpg", "datass.jpg", "disastergirl.jpg", "drunkmom.jpg", "duhh.jpg", "dwight.jpg", "eviltodler.jpg", "goodguygreg.jpg", "grammarnazi.jpg", "grandmainternet.jpg", "interesting.jpg", "internet.jpg", "jealousgirl.jpg", "backinmyday.jpg", "negra.jpg", "nomedigas.jpg", "notime.jpg", "angrywalter.jpg", "notimpressed.jpg", "novicia.jpg", "overlyattachedgirlfriend.jpg", "oaboyfriend.jpg", "oficinista.jpg", "photogenic.jpg", "policiatestigo.jpg", "problems.jpg", "badarghippie.jpg", "karatekyle.jpg", "laughingmen.jpg", "lazycollegesenior.jpg", "leavebalone.jpg", "leche.jpg", "luckylarry.jpg", "minor.jpg", "rastateacher.jpg", "redditorswife.jpg", "redneck.jpg", "regret.jpg", "sadkeanu.jpg", "skeptical.jpg", "steffi.jpg", "stonerstanley.jpg", "succesful.jpg", "successkid.jpg", "thirdworld.jpg", "metalhead.jpg", "middleclassmilf.jpg", "provincial.jpg", "scumbagbrain.jpg", "women.jpg", "awesometeacher.jpg", "einstein.jpg", "jesus.jpg", "trolgirl.jpg", "turista.jpg", "infancia.jpg", "josephducreux.jpg", "nerdgirl.jpg", "overeducated.jpg", "programmer.jpg", "scumbag.jpg", "sexadvice.jpg", "weirdface.jpg", "unhelpful.jpg", "vengeancedad.jpg", "yaomin.jpg", "yaowonka.jpg", "foreveralone.jpg", "challenge.jpg", "yuno.jpg", "mrbean.jpg", "alegria.jpg", "determined.jpg", "badas.jpg", "trollface.jpg", "truestory.jpg", "xallthey.jpg", "yao.jpg", "okayguy.jpg", "ragefu.jpg", "why.jpg", "ash.jpg", "chemdog.jpg", "badadvice.jpg", "advicegod.jpg", "advicemall.jpg", "advicedog.jpg", "antijokechicken.jpg", "anxietycat.jpg", "apathydog.jpg", "aristocat.jpg", "artowl.jpg", "aviatordog.jpg", "awesome.jpg", "sociallyawkwardpenguin.jpg", "awesomeawkward.jpg", "awkwardsocial.jpg", "chihuahua.jpg", "chilllemur.jpg", "businesscat.jpg", "chemistrycat.jpg", "chronicillness.jpg", "foca.jpg", "confessionbear.jpg", "depressedcat.jpg", "crazywolf.jpg", "insanitywolf.jpg", "interestingcat.jpg", "frog.jpg", "laraza.jpg", "pony.jpg", "surprisekoala.jpg", "badspider.jpg", "bicho.jpg", "stonerdog.jpg", "richraven.jpg", "sadcat.jpg", "slowpoke.jpg", "racistdog.jpg", "nc.jpg", "maladvice.jpg", "grumpycat.jpg", "homophobic.jpg", "monos.jpg", "papercat.jpg", "paranoidparrot.jpg", "pato.jpg", "foulbachelorfrog.jpg", "bonobolife.jpg", "baby.jpg", "drunkbaby.jpg", "angrybaby.jpg", "babygodfather.jpg", "babylove.jpg", "screambaby.jpg", "daria.jpg", "fpsnoob.jpg", "boxxy.jpg", "shanaynay.jpg", "friendzone.jpg", "hernan.jpg", "hideyokids.jpg", "impusibru.jpg", "notbad.jpg", "putin.jpg", "queen.jpg", "zarkozy.jpg", "merkel.jpg", "dilma.jpg", "rajoy.jpg", "arjona.jpg", "bonet.jpg", "maluma.jpg", "nicogaviria.jpg", "lapiedra.jpg", "penaloza.jpg", "marimar.jpg", "mecatie.jpg", "timochenko.jpg", "nati.jpg", "nerasloma.jpg", "padre.jpg", "piedad.jpg", "quevedo.jpg", "riano.jpg", "jessyk.jpg", "jmsantos.jpg", "juangabriel.jpg", "cvargas.jpg", "candela.jpg", "sabino.jpg", "luisarango.jpg", "guadania.jpg", "cabo.jpg", "carolinag.jpg", "nicky.jpg", "chencho.jpg", "balvin.jpg", "mike.jpg", "royce.jpg", "chapo.jpg"];
+    reviewed = window.localStorage.getItem("reviewed");
+    if(reviewed === null || reviewed != "true") {
+        var myFirebaseRef = new Firebase("https://easymemes.firebaseio.com/");
+
+    myFirebaseRef.child("features/reviewed").on("value", function(snapshot) {
+      if(snapshot.val() == 1) {
+        window.localStorage.setItem("reviewed", "true");
+      } else {
+        window.localStorage.setItem("reviewed", "false");
+      }
+    });
+    }
+
+	
+	if(reviewed != "true") {
+        
+        strings = ["asian.jpg", "1990.jpg", "angryschool.jpg", "asianfather.jpg", "badluckbrian.jpg", "beargrills.jpg", "butthurtdweller.jpg", "philosoraptor.jpg", "chinesekid.jpg", "chubbygirl.jpg", "attractiveconv.jpg", "scumbaggirl.jpg", "clarity.jpg", "confessionkid.jpg", "collegefreshman.jpg", "correction.jpg", "datass.jpg", "disastergirl.jpg", "drunkmom.jpg", "duhh.jpg", "dwight.jpg", "eviltodler.jpg", "goodguygreg.jpg", "grammarnazi.jpg", "grandmainternet.jpg", "interesting.jpg", "internet.jpg", "jealousgirl.jpg", "backinmyday.jpg", "negra.jpg", "nomedigas.jpg", "notime.jpg", "angrywalter.jpg", "notimpressed.jpg", "novicia.jpg", "overlyattachedgirlfriend.jpg", "oaboyfriend.jpg", "oficinista.jpg", "photogenic.jpg", "policiatestigo.jpg", "problems.jpg", "badarghippie.jpg", "karatekyle.jpg", "laughingmen.jpg", "lazycollegesenior.jpg", "leavebalone.jpg", "leche.jpg", "luckylarry.jpg", "minor.jpg", "rastateacher.jpg", "redditorswife.jpg", "redneck.jpg", "regret.jpg", "sadkeanu.jpg", "skeptical.jpg", "steffi.jpg", "stonerstanley.jpg", "succesful.jpg", "successkid.jpg", "thirdworld.jpg", "metalhead.jpg", "middleclassmilf.jpg", "provincial.jpg", "scumbagbrain.jpg", "women.jpg", "awesometeacher.jpg", "einstein.jpg", "jesus.jpg", "trolgirl.jpg", "turista.jpg", "infancia.jpg", "josephducreux.jpg", "nerdgirl.jpg", "overeducated.jpg", "programmer.jpg", "scumbag.jpg", "sexadvice.jpg", "weirdface.jpg", "unhelpful.jpg", "vengeancedad.jpg", "yaomin.jpg", "yaowonka.jpg", "foreveralone.jpg", "challenge.jpg", "yuno.jpg", "mrbean.jpg", "alegria.jpg", "determined.jpg", "badas.jpg", "trollface.jpg", "truestory.jpg", "xallthey.jpg", "yao.jpg", "okayguy.jpg", "ragefu.jpg", "why.jpg", "ash.jpg", "chemdog.jpg", "badadvice.jpg", "advicegod.jpg", "advicemall.jpg", "advicedog.jpg", "antijokechicken.jpg", "anxietycat.jpg", "apathydog.jpg", "aristocat.jpg", "artowl.jpg", "aviatordog.jpg", "awesome.jpg", "sociallyawkwardpenguin.jpg", "awesomeawkward.jpg", "awkwardsocial.jpg", "chihuahua.jpg", "chilllemur.jpg", "businesscat.jpg", "chemistrycat.jpg", "chronicillness.jpg", "foca.jpg", "confessionbear.jpg", "depressedcat.jpg", "crazywolf.jpg", "insanitywolf.jpg", "interestingcat.jpg", "frog.jpg", "laraza.jpg", "pony.jpg", "surprisekoala.jpg", "badspider.jpg", "bicho.jpg", "stonerdog.jpg", "richraven.jpg", "sadcat.jpg", "slowpoke.jpg", "racistdog.jpg", "nc.jpg", "maladvice.jpg", "grumpycat.jpg", "homophobic.jpg", "monos.jpg", "papercat.jpg", "paranoidparrot.jpg", "pato.jpg", "foulbachelorfrog.jpg", "bonobolife.jpg", "baby.jpg", "drunkbaby.jpg", "angrybaby.jpg", "babygodfather.jpg", "babylove.jpg", "screambaby.jpg", "daria.jpg", "fpsnoob.jpg", "boxxy.jpg", "shanaynay.jpg", "friendzone.jpg", "hernan.jpg", "hideyokids.jpg", "impusibru.jpg", "notbad.jpg", "putin.jpg", "queen.jpg", "zarkozy.jpg", "merkel.jpg", "dilma.jpg", "rajoy.jpg", "arjona.jpg", "bonet.jpg", "maluma.jpg", "nicogaviria.jpg", "lapiedra.jpg", "penaloza.jpg", "marimar.jpg", "mecatie.jpg", "timochenko.jpg", "nati.jpg", "nerasloma.jpg", "padre.jpg", "piedad.jpg", "quevedo.jpg", "riano.jpg", "jessyk.jpg", "jmsantos.jpg", "juangabriel.jpg", "cvargas.jpg", "candela.jpg", "sabino.jpg", "luisarango.jpg", "guadania.jpg", "cabo.jpg", "carolinag.jpg", "nicky.jpg", "chencho.jpg", "balvin.jpg", "mike.jpg", "royce.jpg", "chapo.jpg"];
+        
+
 	} else {
+       
 		strings = ["asian.jpg", "1990.jpg", "angryschool.jpg", "asianfather.jpg", "badluckbrian.jpg", "beargrills.jpg", "aliens.jpg", "braceyourselves.jpg", "brujeria.jpg", "butthurtdweller.jpg", "philosoraptor.jpg", "boromir.jpg", "chinesekid.jpg", "chubbygirl.jpg", "attractiveconv.jpg", "scumbaggirl.jpg", "chucknorris.jpg", "clarity.jpg", "confessionkid.jpg", "collegefreshman.jpg", "correction.jpg", "dareyou.jpg", "datass.jpg", "dicaprio.jpg", "disastergirl.jpg", "drunkmom.jpg", "duhh.jpg", "dwight.jpg", "eviltodler.jpg", "facepalm.jpg", "finallyover.jpg", "frustrated.jpg", "gollum.jpg", "goodguygreg.jpg", "grammarnazi.jpg", "grandmainternet.jpg", "interesting.jpg", "internet.jpg", "ironman.jpg", "jealousgirl.jpg", "backinmyday.jpg", "negra.jpg", "neo.jpg", "agentsmith.jpg", "nomedigas.jpg", "notime.jpg", "angrywalter.jpg", "notimpressed.jpg", "novicia.jpg", "overlyattachedgirlfriend.jpg", "oaboyfriend.jpg", "oficinista.jpg", "oprah.jpg", "parker.jpg", "pauld.jpg", "photogenic.jpg", "policiatestigo.jpg", "problems.jpg", "badarghippie.jpg", "karatekyle.jpg", "keanu.jpg", "laughingmen.jpg", "lazycollegesenior.jpg", "leavebalone.jpg", "leche.jpg", "luckylarry.jpg", "minor.jpg", "morpheus.jpg", "mvp.jpg", "rastateacher.jpg", "redditorswife.jpg", "redneck.jpg", "regret.jpg", "sadkeanu.jpg", "sammy.jpg", "skeptical.jpg", "sparta.jpg", "ironman2.jpg", "steffi.jpg", "stonerstanley.jpg", "succesful.jpg", "successkid.jpg", "thirdworld.jpg", "thumb.jpg", "timberlake.jpg", "metalhead.jpg", "middleclassmilf.jpg", "provincial.jpg", "scumbagbrain.jpg", "vendetta.jpg", "women.jpg", "awesometeacher.jpg", "einstein.jpg", "jesus.jpg", "trolgirl.jpg", "turista.jpg", "tyler.jpg", "infancia.jpg", "jokerrainbow.jpg", "josephducreux.jpg", "nerdgirl.jpg", "overeducated.jpg", "programmer.jpg", "scumbag.jpg", "sexadvice.jpg", "weirdface.jpg", "loseminds.jpg", "unhelpful.jpg", "vengeancedad.jpg", "whyfuck.jpg", "willsmith.jpg", "willywonka.jpg", "yaomin.jpg", "yaowonka.jpg", "yodawg.jpg", "foreveralone.jpg", "challenge.jpg", "yuno.jpg", "mrbean.jpg", "alegria.jpg", "determined.jpg", "badas.jpg", "trollface.jpg", "truestory.jpg", "tomesu4.jpg", "xallthey.jpg", "yao.jpg", "okayguy.jpg", "ragefu.jpg", "why.jpg", "bob.jpg", "bob1.jpg", "50corazones.jpg", "patricksays.jpg", "ash.jpg", "professoroak.jpg", "chavo8.jpg", "florinda.jpg", "donramon.jpg", "futuramafry.jpg", "takemymoney.jpg", "leela.jpg", "herculeshades.jpg", "hipsterariel.jpg", "homer.jpg", "tabla.jpg", "crosseyedgoku.jpg", "nappa.jpg", "dinkleberg.jpg", "toystory.jpg", "southpark.jpg", "chemdog.jpg", "badadvice.jpg", "advicegod.jpg", "advicemall.jpg", "advicedog.jpg", "antijokechicken.jpg", "anxietycat.jpg", "apathydog.jpg", "aristocat.jpg", "artowl.jpg", "aviatordog.jpg", "awesome.jpg", "sociallyawkwardpenguin.jpg", "awesomeawkward.jpg", "awkwardsocial.jpg", "chihuahua.jpg", "chilllemur.jpg", "businesscat.jpg", "chemistrycat.jpg", "chronicillness.jpg", "foca.jpg", "confessionbear.jpg", "depressedcat.jpg", "crazywolf.jpg", "insanitywolf.jpg", "interestingcat.jpg", "frog.jpg", "laraza.jpg", "pony.jpg", "surprisekoala.jpg", "badspider.jpg", "bicho.jpg", "ted.jpg", "trap.jpg", "yoda.jpg", "stonerdog.jpg", "rene.jpg", "richraven.jpg", "sadcat.jpg", "slowpoke.jpg", "racistdog.jpg", "nc.jpg", "maladvice.jpg", "lionking.jpg", "gatosh.jpg", "grumpycat.jpg", "homophobic.jpg", "monos.jpg", "papercat.jpg", "paranoidparrot.jpg", "pato.jpg", "foulbachelorfrog.jpg", "bonobolife.jpg", "baby.jpg", "drunkbaby.jpg", "angrybaby.jpg", "babygodfather.jpg", "babylove.jpg", "screambaby.jpg", "daria.jpg", "fpsnoob.jpg", "mrbean2.jpg", "borat.jpg", "boxxy.jpg", "snowden.jpg", "brucew.jpg", "captain.jpg", "caray.jpg", "aniston.jpg", "barneystinson.jpg", "barneywin.jpg", "beyonce.jpg", "bieber.jpg", "billgates.jpg", "billmurray.jpg", "billoreily.jpg", "christina.jpg", "ellen.jpg", "clooney.jpg", "comillas.jpg", "cryingparker.jpg", "deniro.jpg", "docbrown.jpg", "drevil.jpg", "gangam.jpg", "hefner.jpg", "hilton.jpg", "jayz.jpg", "johnysins.jpg", "ariana.jpg", "lindsay.jpg", "mark.jpg", "matias.jpg", "miley.jpg", "minaj.jpg", "onedir.jpg", "sasha.jpg", "shanaynay.jpg", "seestiro.jpg", "shaq.jpg", "skrillex.jpg", "snoopdog.jpg", "tebow.jpg", "thehell.jpg", "thicke.jpg", "tyson.jpg", "vindiesel.jpg", "wasthere.jpg", "angrydumbledore.jpg", "cuchis.jpg", "cucho.jpg", "findyou.jpg", "freezing.jpg", "friendzone.jpg", "gandalf.jpg", "harypotter.jpg", "levine.jpg", "heresjohny.jpg", "hernan.jpg", "hideyokids.jpg", "marshall.jpg", "impusibru.jpg", "jacksparrow.jpg", "mask.jpg", "powers.jpg", "pulp.jpg", "rapistedward.jpg", "scary.jpg", "house.jpg", "iknow.jpg", "soldier.jpg", "sparrow.jpg", "wolowitz.jpg", "zombie.jpg", "bane.jpg", "batman.jpg", "badfactman.jpg", "batmanslap.jpg", "headhache.jpg", "spidercomputer.jpg", "whispering.jpg", "chickenspider.jpg", "notbad.jpg", "obama.jpg", "obamaphone.jpg", "obamapissed.jpg", "obamarie.jpg", "scumbagobama.jpg", "staffobama.jpg", "putin.jpg", "queen.jpg", "zarkozy.jpg", "merkel.jpg", "dilma.jpg", "rajoy.jpg", "trump.jpg", "mourinho.jpg", "pekerman.jpg", "james.jpg", "cristiano.jpg", "messi.jpg", "suarez.jpg", "arjona.jpg", "bonet.jpg", "pepe.jpg", "banderas.jpg", "calle13.jpg", "chente.jpg", "esperanzag.jpg", "escobar2.jpg", "maluma.jpg", "nicogaviria.jpg", "hayek.jpg", "lapiedra.jpg", "penaloza.jpg", "maduro.jpg", "marimar.jpg", "mecatie.jpg", "timochenko.jpg", "nati.jpg", "nerasloma.jpg", "noexiste.jpg", "uribe.jpg", "vergara.jpg", "padre.jpg", "penanieto.jpg", "piedad.jpg", "pitbull.jpg", "quevedo.jpg", "riano.jpg", "jessyk.jpg", "jmsantos.jpg", "juangabriel.jpg","adele.jpg","kk.jpg","cvargas.jpg","justin.jpg","candela.jpg","donfrancisco.jpg","sabino.jpg","villalobos.jpg","luisarango.jpg","guadania.jpg","cabo.jpg","carolinag.jpg","stifler.jpg","romeo.jpg","nicky.jpg","chencho.jpg","balvin.jpg","mike.jpg","royce.jpg", "chapo.jpg"];
-		december = false;
 	}
     var totalMemes = strings.length;
     var remove = 0;
-    if(december === true) {
+    if(reviewed === null || reviewed == "false") {
     	remove = 150;
     }
-
     if(loaded === false){
         loaded = true;
     screenWidth = screen.width;
@@ -211,6 +223,7 @@ var app = {
         
         startFlurry();
 
+
         var userLang = window.localStorage.getItem("deviceLanguage");
         if(userLang === null){
             checkLanguage();
@@ -232,7 +245,6 @@ var app = {
         });
 
 
-    
         fillGrid();    
 
         app.receivedEvent('deviceready');
@@ -281,14 +293,16 @@ function startFlurry(){
 function showInfo(){
     userLang = window.localStorage.getItem("deviceLanguage");
     if(userLang == "es"){
-        swal({   title: "Easy Memes v1.1",   text: "<span id='thanks'>Contacto: <a href=\"mailto:danywarner@gmail.com \" style=\"text-decoration: none;\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1;text-decoration: none;\">@danywarner</a><br/>Agradecimientos: <br/><a href=\"http://twitter.com/jhohantorres\" style=\"color:#58a9f1;text-decoration: none;\">@JhohanTorres</a><br/><a href=\"http://twitter.com/jalejoleon\" style=\"color:#58a9f1;text-decoration: none;\">@Jalejoleon</a><br/> </span>",   imageUrl: "./icons/raptor180.png", html: true });
+        swal({   title: "Easy Memes v1.2",   text: "<span id='thanks'>Contacto: <a href=\"mailto:danywarner@gmail.com \" style=\"text-decoration: none;\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1;text-decoration: none;\">@danywarner</a><br/>Agradecimientos: <br/><a href=\"http://twitter.com/jhohantorres\" style=\"color:#58a9f1;text-decoration: none;\">@JhohanTorres</a><br/><a href=\"http://twitter.com/jalejoleon\" style=\"color:#58a9f1;text-decoration: none;\">@Jalejoleon</a><br/> </span>",   imageUrl: "./icons/raptor180.png", html: true });
     }else{
-        swal({   title: "Easy Memes v1.1",   text: "<span id='thanks'>Contact: <a href=\"mailto:danywarner@gmail.com \" style=\"text-decoration: none;\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1;text-decoration: none;\">@danywarner</a><br/>Thanks to: <br/><a href=\"http://twitter.com/jhohantorres\" style=\"color:#58a9f1;text-decoration: none;\">@JhohanTorres</a><br/><a href=\"http://twitter.com/jalejoleon\" style=\"color:#58a9f1;text-decoration: none;\">@Jalejoleon</a><br/> </span>",   imageUrl: "./icons/raptor180.png", html: true });
+        swal({   title: "Easy Memes v1.2",   text: "<span id='thanks'>Contact: <a href=\"mailto:danywarner@gmail.com \" style=\"text-decoration: none;\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1;text-decoration: none;\">@danywarner</a><br/>Thanks to: <br/><a href=\"http://twitter.com/jhohantorres\" style=\"color:#58a9f1;text-decoration: none;\">@JhohanTorres</a><br/><a href=\"http://twitter.com/jalejoleon\" style=\"color:#58a9f1;text-decoration: none;\">@Jalejoleon</a><br/> </span>",   imageUrl: "./icons/raptor180.png", html: true });
     }
     
 }
 
 function setVariables(){
+
+    
 
     userLang = window.localStorage.getItem("deviceLanguage");
     var backText = document.getElementById("BackToGridk");
@@ -359,78 +373,9 @@ function start(fuente){
     else{
         $("#kkk").attr('src',fuente);
     }
-    if(userLang == "fr"){
-        if(screenWidth == 320){
-            document.getElementById("libraryButton").style.marginLeft = "140px";
-        }
-        if(screenWidth == 375){
-            document.getElementById("libraryButton").style.marginLeft = "195px";
-        }
-        if(screenWidth == 414){
-            document.getElementById("libraryButton").style.marginLeft = "225px";
-        }
-        if(screenWidth == 768){
-            document.getElementById("libraryButton").style.marginLeft = "575px";
-        }
-    }
-    else if(userLang == "it"){
-        if(screenWidth == 320){
-            document.getElementById("libraryButton").style.marginLeft = "155px";
-        }
-        if(screenWidth == 375){
-            document.getElementById("libraryButton").style.marginLeft = "215px";
-        }
-        if(screenWidth == 414){
-            document.getElementById("libraryButton").style.marginLeft = "240px";
-        }
-        if(screenWidth == 768){
-            document.getElementById("libraryButton").style.marginLeft = "585px";
-        }
-    }
-    else if(userLang == "pt"){
-        if(screenWidth == 320){
-            document.getElementById("libraryButton").style.marginLeft = "155px";
-        }
-        if(screenWidth == 375){
-            document.getElementById("libraryButton").style.marginLeft = "215px";
-        }
-        if(screenWidth == 414){
-            document.getElementById("libraryButton").style.marginLeft = "245px";
-        }
-        if(screenWidth == 768){
-            document.getElementById("libraryButton").style.marginLeft = "585px";
-        }
-        
-    }
-    else if(userLang == "de"){
-        if(screenWidth == 320){
-            document.getElementById("libraryButton").style.marginLeft = "140px";
-        }
-        if(screenWidth == 375){
-            document.getElementById("libraryButton").style.marginLeft = "195px";
-        }
-        if(screenWidth == 414){
-            document.getElementById("libraryButton").style.marginLeft = "235px";
-        }
-        if(screenWidth == 768){
-            document.getElementById("libraryButton").style.marginLeft = "575px";
-        }
-        
-    }
-    else if(userLang == "ru"){
-        if(screenWidth == 320){
-            document.getElementById("libraryButton").style.marginLeft = "160px";
-        }
-        if(screenWidth == 375){
-            document.getElementById("libraryButton").style.marginLeft = "215px";
-        }
-        if(screenWidth == 414){
-            document.getElementById("libraryButton").style.marginLeft = "250px";
-        }
-        if(screenWidth == 768){
-            document.getElementById("libraryButton").style.marginLeft = "585px";
-        }
-    }
+}
+
+
 
     ////hacerlo siempre. en las precargadas se bloquea si se intenta hacer de otra forma
     //setTimeout(function(){ adjustSize(img); }, 100);
@@ -444,9 +389,6 @@ function start(fuente){
             bottom.style.fontSize = fontSize;
     }*/
     
-    
-
-} 
 
 function setCropedFalse(){
     cropped = false;
