@@ -304,6 +304,33 @@
 /* #### iPhone 6+ / 6s+ Landscape #### */
 @media (device-width: 414px) and (device-height: 736px) and (orientation: landscape) {
     
+    .footer-menu{
+        height: 14px;
+        margin-top: 0px;
+    }
+
+    #gridFooter {
+
+        padding-top: 0px;
+    }
+
+    #pageIndicator {
+        margin-top: 0px;
+    }
+
+    #backArrow {
+        position:fixed;
+        left:5px;
+        top:3px;
+    }
+
+    #BackToGridk {
+        position:fixed;
+        left:10px;
+        top:-9px;
+    }
+
+
     #header{
         margin-top: 0px;
         border-bottom: none;
@@ -331,7 +358,7 @@
     #container{
         margin-left: 18px;
         margin-top: 0px;
-        height: 388px;
+        height: 398px;
     }
 
     #topTextk, #bottomTextk{
@@ -358,14 +385,14 @@
     #libraryButton{
         margin-left: 0px;
         position:fixed;
-        left:684px;
+        left:694px;
         top:35px;
     }
 
     #cameraButton{
         margin-left: 0px;
         position:fixed;
-        left:680px;
+        left:690px;
         top:165px;
     }
     
@@ -373,19 +400,8 @@
         visibility: visible;
         margin-left: 0px;
         position:fixed;
-        left:683px;
+        left:693px;
         top:325px;
-        width: 32px;
-    }
-
-    #infoButton{
-        visibility: hidden;
-        margin-left: 0px;
-        position:fixed;
-        left:682px;
-        top:340px;
-        width: 36px;
-      
     }
 }
 

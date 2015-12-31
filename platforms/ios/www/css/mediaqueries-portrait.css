@@ -2,17 +2,7 @@
 /* #### iPhone 4s */
 @media (device-width: 320px) and (device-height: 480px) and (orientation: portrait) {
 
-    #backArrow {
-        position:fixed;
-        left:8px;
-        top:32px;
-    }
-
-    #BackToGridk {
-        position:fixed;
-        left:12px;
-        top:20px;
-    }
+    
 
     #libraryButton {
         margin-top: 0px;
@@ -71,17 +61,6 @@
 /* #### iPhone 5 Portrait #### */
 @media (device-width: 320px) and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and(orientation: portrait) {
     
-    #backArrow {
-        position:fixed;
-        left:8px;
-        top:32px;
-    }
-
-    #BackToGridk {
-        position:fixed;
-        left:12px;
-        top:20px;
-    }
 
     #footer {
         margin-top: 460px;
@@ -132,18 +111,6 @@
 
 /* #### iPhone 6 AND 6s Portrait*/
 @media (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
-  
-    #backArrow {
-        position:fixed;
-        left:8px;
-        top:32px;
-    }
-
-    #BackToGridk {
-        position:fixed;
-        left:12px;
-        top:20px;
-    }
 
     #kkk {
         width: 360px;
@@ -209,11 +176,23 @@
 
 /* 6+ AND 6s+ Portrait*/
 @media (device-width: 414px) and (device-height: 736px) and (orientation: portrait) {
+
     #kkk {
         width: 397px;
     }
+    
     #libraryButton {
-        margin-left: 260px;
+        margin-top: 0px;
+        margin-left: 0px;
+        position:fixed;
+        left:345px;
+        top:35px;
+    }
+
+    #cameraButton {
+        position:fixed;
+        left:366px;
+        top:21px;
     }
 
     .gridpicture {
@@ -244,12 +223,17 @@
          max-height: 117px;
     }
      #footer {
-        margin-top: 600px;
+        margin-top: 627px;
     }
+
+    #actionIcon {
+        margin-left: 8px;
+        margin-top: 9px;
+    }
+
     #infoButton{
-        width: 48px;
-        margin-left: 305px;
-        margin-top: -2px;
+        margin-left: 338px;
+        
     }
 
 

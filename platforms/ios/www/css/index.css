@@ -322,6 +322,7 @@ h1 {
 }
 
 
+
 #BackToGridk { /*SFNS Display*/
     font-family: "SFNS Display" !important;
     background: rgba(255, 255, 255, 0);
@@ -334,6 +335,18 @@ h1 {
     border-style: none;
     text-decoration: none;
 
+}
+
+#backArrow {
+    position:fixed;
+    left:8px;
+    top:32px;
+}
+
+#BackToGridk {
+    position:fixed;
+    left:12px;
+    top:20px;
 }
 
 
