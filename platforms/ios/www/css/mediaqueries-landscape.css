@@ -410,6 +410,33 @@
 /* #### iPads Landscape #### */
 @media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape){
 
+    .footer-menu{
+        height: 17px;
+        margin-top: -3px;
+
+    }
+
+    #gridFooter {
+
+        padding-top: 0px;
+    }
+
+    #pageIndicator {
+        margin-top: 0px;
+    }
+
+    #backArrow {
+    position:fixed;
+    left:12px;
+    top:32px;
+    }
+
+    #BackToGridk {
+    position:fixed;
+    left:16px;
+    top:20px;
+    }
+
     #kkk {
         margin-left: 200px;
         width: 600px;
@@ -426,17 +453,23 @@
         width: 770px;
     }
 
-    #libraryButton {
-        margin-left: 860px;
+    #libraryButton{
+        margin-left: 0px;
+        position:fixed;
+        left:955px;
+        top:21px;
     }
 
-    #cameraButton {
-        margin-left: 15px;
+    #cameraButton{
+        margin-left: 0px;
+        position:fixed;
+        left:985px;
+        top:21px;
     }
 
     #container{
         margin-left: 6px;
-        height: 723px;
+        height: 733px;
     }
 
     #topTextk, #bottomTextk{
@@ -462,20 +495,21 @@
     }
     
     #footer {
-        margin-top: 645px;
+        margin-top: 662px;
         
     }
+    
     #actionIcon {
-        width: 28px;
-        padding-top: 7px;
-        margin-left: 20px;
+        margin-left: 8px;
+        margin-top: 9px;
+    }
+    
+    #infoButton{
+        
+        margin-left: 945px;
     }
 
-    #infoButton{
-        width: 36px;
-        margin-left: 920px;
-        padding-bottom: 2px;
-    }
+
     #firstpage{
         background-color: #dedede;
     }

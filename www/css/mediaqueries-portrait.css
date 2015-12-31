@@ -264,11 +264,17 @@
     }
 
     #libraryButton {
-        margin-left: 590px;
+        margin-top: 0px;
+        margin-left: 0px;
+        position:fixed;
+        left:690px;
+        top:35px;
     }
 
     #cameraButton {
-        margin-left: 15px;
+        position:fixed;
+        left:711px;
+        top:21px;
     }
 
     #topTextk, #bottomTextk{
@@ -293,20 +299,23 @@
     }
     
     #footer {
-        margin-top: 895px;
+        margin-top: 917px;
         
     }
-    #actionIcon {
-        width: 28px;
-        padding-top: 7px;
-        margin-left: 20px;
-    }
 
-    #infoButton{
-        width: 36px;
-        margin-left: 650px;
-        padding-bottom: 2px;
+    #actionIcon {
+        margin-left: 8px;
+        margin-top: 9px;
     }
+    
+    #infoButton{
+        
+        margin-left: 690px;
+    }
+    
+    
+
+
     #firstpage{
         background-color: #dedede;
     }
