@@ -60,10 +60,11 @@ function fillGrid(){
 
     reviewed = window.localStorage.getItem("reviewed");
     if(reviewed === null || reviewed != "true") {
-        var myFirebaseRef = new Firebase("https://easymemes.firebaseio.com/");
-
+        var myFirebaseRef = new Firebase("https://easymemes2.firebaseio.com/");
+        
     myFirebaseRef.child("features/reviewed").on("value", function(snapshot) {
       if(snapshot.val() == 1) {
+        
         window.localStorage.setItem("reviewed", "true");
       } else {
         window.localStorage.setItem("reviewed", "false");
@@ -293,9 +294,9 @@ function startFlurry(){
 function showInfo(){
     userLang = window.localStorage.getItem("deviceLanguage");
     if(userLang == "es"){
-        swal({   title: "Easy Memes v1.2",   text: "<span id='thanks'>Contacto: <a href=\"mailto:danywarner@gmail.com \" style=\"text-decoration: none;\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1;text-decoration: none;\">@danywarner</a><br/>Agradecimientos: <br/><a href=\"http://twitter.com/jhohantorres\" style=\"color:#58a9f1;text-decoration: none;\">@JhohanTorres</a><br/><a href=\"http://twitter.com/jalejoleon\" style=\"color:#58a9f1;text-decoration: none;\">@Jalejoleon</a><br/> </span>",   imageUrl: "./icons/raptor180.png", html: true });
+        swal({   title: "Easy Memes v1.3",   text: "<span id='thanks'>Contacto: <a href=\"mailto:danywarner@gmail.com \" style=\"text-decoration: none;\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1;text-decoration: none;\">@danywarner</a><br/>Agradecimientos: <br/><a href=\"http://twitter.com/jhohantorres\" style=\"color:#58a9f1;text-decoration: none;\">@JhohanTorres</a><br/><a href=\"http://twitter.com/jalejoleon\" style=\"color:#58a9f1;text-decoration: none;\">@Jalejoleon</a><br/> </span>",   imageUrl: "./icons/raptor180.png", html: true });
     }else{
-        swal({   title: "Easy Memes v1.2",   text: "<span id='thanks'>Contact: <a href=\"mailto:danywarner@gmail.com \" style=\"text-decoration: none;\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1;text-decoration: none;\">@danywarner</a><br/>Thanks to: <br/><a href=\"http://twitter.com/jhohantorres\" style=\"color:#58a9f1;text-decoration: none;\">@JhohanTorres</a><br/><a href=\"http://twitter.com/jalejoleon\" style=\"color:#58a9f1;text-decoration: none;\">@Jalejoleon</a><br/> </span>",   imageUrl: "./icons/raptor180.png", html: true });
+        swal({   title: "Easy Memes v1.3",   text: "<span id='thanks'>Contact: <a href=\"mailto:danywarner@gmail.com \" style=\"text-decoration: none;\">danywarner@gmail.com</a><br> Twitter: <a href=\"http://twitter.com/danywarner\" style=\"color:#58a9f1;text-decoration: none;\">@danywarner</a><br/>Thanks to: <br/><a href=\"http://twitter.com/jhohantorres\" style=\"color:#58a9f1;text-decoration: none;\">@JhohanTorres</a><br/><a href=\"http://twitter.com/jalejoleon\" style=\"color:#58a9f1;text-decoration: none;\">@Jalejoleon</a><br/> </span>",   imageUrl: "./icons/raptor180.png", html: true });
     }
     
 }
