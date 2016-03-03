@@ -1,6 +1,6 @@
 Easy Memes
 ======================
-![alt tag](http://i.imgur.com/CiYCPce.gif)
+![alt tag](http://i.imgur.com/69LbMCK.gif)
 
 ## Description:
 
